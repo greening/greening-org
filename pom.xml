@@ -11,8 +11,8 @@
   <name>Dan Greening web site</name>
   <url>http://greening.org</url>
   <scm>
-  	<connection>scm:git:ssh://greening@greening.4java.ca/git/greening-org.git</connection>
-  	<url>http://greening.4java.ca/git/greening-org.git</url>
+  	<connection>scm:git:file:///Users/greening/git/greening-org</connection>
+  	<url>http://greening.4java.ca/git/greening.org</url>
   </scm>
   <build>
   	<defaultGoal>war</defaultGoal>

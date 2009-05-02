@@ -1,4 +1,4 @@
-<Context reloadable="false" override="true"
+<Context reloadable="true" override="true"
          crossContext="false"
          path="">
 </Context>

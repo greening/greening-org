@@ -15,11 +15,6 @@
   <build>
   	<defaultGoal>war</defaultGoal>
     <finalName>ROOT</finalName>
-    <resources>
-    	<resource>
-    		<directory>src/main/webapp</directory>
-    	</resource>
-    </resources>
     <plugins>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>

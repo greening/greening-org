@@ -1,2 +1,2 @@
 #!/bin/sh -x
-scp target/ROOT.war greening@greening.4java.ca:private/apache-tomcat-6.0.14/vhosts/test.greening.org
+scp target/ROOT.war greening@greening.4java.ca:tomcat/vhosts/dan.greening.org

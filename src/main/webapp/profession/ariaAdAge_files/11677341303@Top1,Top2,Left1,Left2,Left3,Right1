@@ -1,0 +1,20 @@
+function OAS_RICH(position) {
+if (position == 'Top1') {
+document.write ('<A HREF="http://oas-central.realmedia.com/RealMedia/ads/click_lx.ads/www.adage.com/other/story/11677341303/1422540766/Top1/crain/AAO_GATOR_ROS_0702/moment.gif/64313030363538363364333139326630" target="_top"><IMG SRC="http://realmedia-a800.d4p.net/6/800/1129/0005/oas-central.realmedia.com/RealMedia/ads/Creatives/crain/AAO_GATOR_ROS_0702/moment.gif"  ALT=""  BORDER="0"></A>');
+}
+if (position == 'Top2') {
+document.write ('<A HREF="http://oas-central.realmedia.com/RealMedia/ads/click_lx.ads/www.adage.com/other/story/11677341303/1381054200/Top2/crain/AAO_GATOR_ROS_0702/aa6.gif/64313030363538363364333139326630" target="New"><IMG SRC="http://realmedia-a800.d4p.net/6/800/1129/0005/oas-central.realmedia.com/RealMedia/ads/Creatives/crain/AAO_GATOR_ROS_0702/aa6.gif"  ALT="Click Here To Find Out How!"  BORDER="0"></A>');
+}
+if (position == 'Left1') {
+document.write ('<A HREF="http://oas-central.realmedia.com/RealMedia/ads/click_lx.ads/www.adage.com/other/story/11677341303/1865988267/Left1/crain/AAO_GATOR_ROS_0702/aa8.gif/64313030363538363364333139326630" target="New"><IMG SRC="http://realmedia-a800.d4p.net/6/800/1129/0005/oas-central.realmedia.com/RealMedia/ads/Creatives/crain/AAO_GATOR_ROS_0702/aa8.gif"  ALT="Click Here for Advertisers Website!" width="120" height="600" BORDER="0"></A>');
+}
+if (position == 'Left2') {
+document.write ('<A HREF="http://oas-central.realmedia.com/RealMedia/ads/click_lx.ads/www.adage.com/other/story/11677341303/1257635941/Left2/default/empty.gif/64313030363538363364333139326630" target="_top"><IMG SRC="http://realmedia-a800.d4p.net/6/800/1129/0005/oas-central.realmedia.com/RealMedia/ads/Creatives/default/empty.gif"  WIDTH=2 HEIGHT=2 ALT="" BORDER=0 BORDER="0"></A>');
+}
+if (position == 'Left3') {
+document.write ('<A HREF="http://oas-central.realmedia.com/RealMedia/ads/click_lx.ads/www.adage.com/other/story/11677341303/506524761/Left3/default/empty.gif/64313030363538363364333139326630" target="_top"><IMG SRC="http://realmedia-a800.d4p.net/6/800/1129/0005/oas-central.realmedia.com/RealMedia/ads/Creatives/default/empty.gif"  WIDTH=2 HEIGHT=2 ALT="" BORDER=0 BORDER="0"></A>');
+}
+if (position == 'Right1') {
+document.write ('<A HREF="http://oas-central.realmedia.com/RealMedia/ads/click_lx.ads/www.adage.com/other/story/11677341303/803950380/Right1/default/empty.gif/64313030363538363364333139326630" target="_top"><IMG SRC="http://realmedia-a800.d4p.net/6/800/1129/0005/oas-central.realmedia.com/RealMedia/ads/Creatives/default/empty.gif"  WIDTH=2 HEIGHT=2 ALT="" BORDER=0 BORDER="0"></A>');
+}
+}

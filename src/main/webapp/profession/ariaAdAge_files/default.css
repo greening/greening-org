@@ -1,0 +1,468 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+BODY {
+	FONT-SIZE: 11px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+TD {
+	FONT-SIZE: 11px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+P {
+	FONT-SIZE: 11px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+INPUT {
+	FONT-SIZE: 10px
+}
+BUTTON {
+	FONT-SIZE: 10px
+}
+SELECT {
+	FONT-SIZE: 10px
+}
+INPUT.button {
+	TEXT-ALIGN: center
+}
+A:link {
+	COLOR: #336699
+}
+A:visited {
+	COLOR: #336699
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; MARGIN: 3% 0px; PADDING-TOP: 0px; FONT-FAMILY: Impact
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; MARGIN: 3% 0px; PADDING-TOP: 0px; FONT-FAMILY: Impact
+}
+H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; MARGIN: 3% 0px; PADDING-TOP: 0px; FONT-FAMILY: Impact
+}
+H4 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; MARGIN: 3% 0px; PADDING-TOP: 0px; FONT-FAMILY: Impact
+}
+H5 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; MARGIN: 3% 0px; PADDING-TOP: 0px; FONT-FAMILY: Impact
+}
+H6 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; PADDING-BOTTOM: 0px; MARGIN: 3% 0px; PADDING-TOP: 0px; FONT-FAMILY: Impact
+}
+SUP {
+	FONT-SIZE: 10px; VERTICAL-ALIGN: super
+}
+.MainBody {
+	FONT-SIZE: 12px
+}
+.MainBody P {
+	FONT-SIZE: 12px
+}
+.MainBody TD {
+	FONT-SIZE: 12px
+}
+.MainBody DIV {
+	FONT-SIZE: 12px
+}
+.SmallBody {
+	FONT-SIZE: 11px
+}
+.SmallBody P {
+	FONT-SIZE: 11px
+}
+.SmallBody TD {
+	FONT-SIZE: 11px
+}
+.SmallBody DIV {
+	FONT-SIZE: 11px
+}
+.SmallerBody {
+	FONT-SIZE: 10px
+}
+.SmallerBody P {
+	FONT-SIZE: 10px
+}
+.SmallerBody TD {
+	FONT-SIZE: 10px
+}
+.SmallerBody DIV {
+	FONT-SIZE: 10px
+}
+.Timestamp {
+	PADDING-RIGHT: 10px; FONT-SIZE: 9px; COLOR: #ffffff
+}
+.topnavBG {
+	BACKGROUND-COLOR: #336699
+}
+.topnavLabel {
+	FILTER: DropShadow(Color='#444444', OffX=1, OffY=1, Positive='true')
+}
+.topnavLabel {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #ffcc99
+}
+.topnavLink {
+	FONT-SIZE: 10px; COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.topnavLink {
+	FONT-SIZE: 10px; COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.topnavLink:link {
+	FONT-SIZE: 10px; COLOR: #ffffff; TEXT-DECORATION: underline
+}
+A.topnavLink:visited {
+	FONT-SIZE: 10px; COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.topnavSectionTitle {
+	FILTER: DropShadow(Color='#444444', OffX=1, OffY=1, Positive='true')
+}
+.topnavSectionTitle {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 18px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: middle; COLOR: #ffffff; PADDING-TOP: 0px; FONT-FAMILY: Arial
+}
+.leftBG {
+	COLOR: #ffffff; BACKGROUND-COLOR: #000000
+}
+.leftadBG {
+	BACKGROUND-COLOR: #000000
+}
+.TopStoriesHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; PADDING-BOTTOM: 0px; COLOR: #336699; PADDING-TOP: 0px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.BlurbTimeStamp {
+	MARGIN-TOP: 8px; FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #336699
+}
+.Blurb {
+	MARGIN-TOP: 8px; FONT-SIZE: 12px; MARGIN-BOTTOM: 0px
+}
+.ArticleTimeStamp {
+	MARGIN-TOP: 12px; FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #336699
+}
+.ArticleBody {
+	FONT-SIZE: 12px
+}
+.ArticleAuthor {
+	MARGIN-TOP: 3px; FONT-SIZE: 12px; COLOR: #666666
+}
+.ArticleBody P {
+	MARGIN-TOP: 18px; FONT-SIZE: 12px; MARGIN-BOTTOM: 0px
+}
+.ArticleQwikFindID {
+	FONT-SIZE: 11px; MARGIN-BOTTOM: 5px; COLOR: #666666
+}
+.ArticlePreviousHeadline {
+	FONT-SIZE: 11px
+}
+.ArticlePreviousHeadline A {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.ArticlePreviousHeadline A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.ArticlePreviousHeadline A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.PhotoCredit {
+	FONT-SIZE: 10px; COLOR: #666666
+}
+.PhotoCaption {
+	FONT-SIZE: 11px; COLOR: #333333
+}
+.SectionIndexRelatedLinks {
+	MARGIN-TOP: 8px; FONT-WEIGHT: bold; FONT-SIZE: 11px; MARGIN-BOTTOM: 0px
+}
+.PreviousArchive {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none
+}
+A.PreviousArchive {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none
+}
+A.PreviousArchive:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none
+}
+A.PreviousArchive:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; TEXT-DECORATION: none
+}
+.HomePageHeadliner {
+	LINE-HEIGHT: 22px
+}
+.HomePageHeadline {
+	LINE-HEIGHT: 22px
+}
+.HomePageHeadliner {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 22px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: Impact
+}
+.HomePageHeadline {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 22px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: Impact
+}
+.HomePageHeadline01 {
+	LINE-HEIGHT: 36px
+}
+.HomePageHeadline01 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 36px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: Impact
+}
+.HomePageHeadline02 {
+	LINE-HEIGHT: 22px
+}
+.HomePageHeadline02 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 22px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: Impact
+}
+.HomePageHeadline03 {
+	LINE-HEIGHT: 22px
+}
+.HomePageHeadline03 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 22px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: Impact
+}
+.SectionIndexHeadline {
+	LINE-HEIGHT: 22px
+}
+A.SectionIndexHeadline {
+	LINE-HEIGHT: 22px
+}
+A.SectionIndexHeadline:link {
+	LINE-HEIGHT: 22px
+}
+A.SectionIndexHeadline:visited {
+	LINE-HEIGHT: 22px
+}
+.SectionIndexHeadline {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 22px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #000000; PADDING-TOP: 0px; FONT-FAMILY: Impact; TEXT-DECORATION: none
+}
+A.SectionIndexHeadline {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 22px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #000000; PADDING-TOP: 0px; FONT-FAMILY: Impact; TEXT-DECORATION: none
+}
+A.SectionIndexHeadline:link {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 22px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #000000; PADDING-TOP: 0px; FONT-FAMILY: Impact; TEXT-DECORATION: none
+}
+A.SectionIndexHeadline:visited {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 22px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #000000; PADDING-TOP: 0px; FONT-FAMILY: Impact; TEXT-DECORATION: none
+}
+.SectionIndexHeadlineBig {
+	LINE-HEIGHT: 36px
+}
+.SectionIndexHeadlineBig {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 36px; PADDING-BOTTOM: 15px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: Impact
+}
+.ArticleHeadline {
+	LINE-HEIGHT: 22px
+}
+.ArticleHeadline {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 22px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #000000; PADDING-TOP: 0px; FONT-FAMILY: Impact; TEXT-DECORATION: none
+}
+.SearchHeadline {
+	LINE-HEIGHT: 18px
+}
+.SearchHeadline {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 18px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #336699; PADDING-TOP: 0px; FONT-FAMILY: Impact; TEXT-DECORATION: none
+}
+.SearchResult {
+	FONT-SIZE: 11px
+}
+.SearchResult A {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px
+}
+.SearchResult A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px
+}
+.SearchResult A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px
+}
+.SearchResultPercentage {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px
+}
+.HomePageSubhead01 {
+	LINE-HEIGHT: 16px
+}
+.HomePageSubhead01 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 16px; PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-TOP: 5px; FONT-FAMILY: Impact
+}
+.ArticleSubhead01 {
+	LINE-HEIGHT: 18px
+}
+.SectionSubhead01 {
+	LINE-HEIGHT: 18px
+}
+.ArticleSubhead01 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 18px; PADDING-BOTTOM: 5px; MARGIN: 0px; COLOR: #666666; PADDING-TOP: 5px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.SectionSubhead01 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 18px; PADDING-BOTTOM: 5px; MARGIN: 0px; COLOR: #666666; PADDING-TOP: 5px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.HomePageSubhead02 {
+	LINE-HEIGHT: 13px
+}
+.SectionSubhead02 {
+	LINE-HEIGHT: 13px
+}
+.ArticleSubhead02 {
+	LINE-HEIGHT: 13px
+}
+.HomePageSubhead02 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-TOP: 5px; FONT-FAMILY: Arial
+}
+.SectionSubhead02 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-TOP: 5px; FONT-FAMILY: Arial
+}
+.ArticleSubhead02 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-TOP: 5px; FONT-FAMILY: Arial
+}
+.HomePageSubhead03 {
+	LINE-HEIGHT: 11px
+}
+.SectionSubhead03 {
+	LINE-HEIGHT: 11px
+}
+.ArticleSubhead03 {
+	LINE-HEIGHT: 11px
+}
+.HomePageSubhead03 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 11px; PADDING-BOTTOM: 5px; MARGIN: 0px; COLOR: #999999; PADDING-TOP: 0px; FONT-FAMILY: Arial
+}
+.SectionSubhead03 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 11px; PADDING-BOTTOM: 5px; MARGIN: 0px; COLOR: #999999; PADDING-TOP: 0px; FONT-FAMILY: Arial
+}
+.ArticleSubhead03 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 11px; PADDING-BOTTOM: 5px; MARGIN: 0px; COLOR: #999999; PADDING-TOP: 0px; FONT-FAMILY: Arial
+}
+.RelatedLinksTitle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 18px; PADDING-BOTTOM: 5px; COLOR: #666666; PADDING-TOP: 10px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.boxHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; PADDING-BOTTOM: 2px; COLOR: #000000; PADDING-TOP: 2px; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.boxBody {
+	FONT-SIZE: 10px
+}
+.boxBody B {
+	FONT-SIZE: 11px
+}
+A.boxBodyHeadline {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px
+}
+A.boxBodyHeadline:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px
+}
+A.boxBodyHeadline:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px
+}
+.boxBodyTimeStamp {
+	FONT-SIZE: 9px; MARGIN-LEFT: 0px; COLOR: #6699cc
+}
+.boxBodyParagraph {
+	FONT-SIZE: 10px; MARGIN-BOTTOM: 5px
+}
+.leftnavBG {
+	BACKGROUND-COLOR: #336699
+}
+A.leftnavCurrent {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffcc66; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.leftnavCurrent {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffcc66; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+A.leftnavCurrent:link {
+	FILTER: DropShadow(Color='#444444', OffX=1, OffY=1, Positive='true')
+}
+A.leftnavCurrent:visited {
+	FILTER: DropShadow(Color='#444444', OffX=1, OffY=1, Positive='true')
+}
+A.leftnavCurrent:hover {
+	FILTER: DropShadow(Color='#444444', OffX=1, OffY=1, Positive='true')
+}
+A.leftnavCurrent:link {
+	MARGIN-LEFT: 0px; COLOR: #ffcc66
+}
+A.leftnavCurrent:visited {
+	MARGIN-LEFT: 0px; COLOR: #ffcc66
+}
+A.leftnavCurrent:hover {
+	MARGIN-LEFT: 0px; COLOR: #ffcc66
+}
+.leftnav {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+A.leftnav {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+A.leftnav:link {
+	FILTER: DropShadow(Color='#444444', OffX=1, OffY=1, Positive='true'); MARGIN-LEFT: 5px
+}
+A.leftnav:visited {
+	FILTER: DropShadow(Color='#444444', OffX=1, OffY=1, Positive='true'); MARGIN-LEFT: 5px
+}
+A.leftnav:hover {
+	FILTER: DropShadow(Color='#444444', OffX=1, OffY=1, Positive='true'); MARGIN-LEFT: 5px
+}
+A.leftnav:link {
+	COLOR: #ffffff
+}
+A.leftnav:visited {
+	COLOR: #ffffff
+}
+A.leftnav:hover {
+	COLOR: #ffffff
+}
+A.leftnav:hover {
+	COLOR: #ffcc66; TEXT-DECORATION: underline
+}
+.rightad {
+	BACKGROUND-COLOR: #000000
+}
+.footer {
+	FONT-SIZE: 9px
+}
+.bottomnav {
+	FONT-SIZE: 11px; COLOR: #ffffff; BACKGROUND-COLOR: #336699
+}
+.bottomnav A {
+	COLOR: #ffffff
+}
+.bottomnav A:link {
+	COLOR: #ffffff
+}
+.bottomnav A:visited {
+	COLOR: #ffffff
+}
+.Size1 {
+	FONT-SIZE: 10px
+}
+.Size2 {
+	FONT-SIZE: 12px
+}
+.Size3 {
+	FONT-SIZE: 16px
+}
+.Size4 {
+	FONT-SIZE: 20px
+}
+.Size5 {
+	FONT-SIZE: 24px
+}
+.Size6 {
+	FONT-SIZE: 30px
+}
+.Size7 {
+	FONT-SIZE: 48px
+}
+#TopQwikFindTitle {
+	PADDING-LEFT: 5px
+}
+#TopQwikFindBox {
+	PADDING-LEFT: 4px
+}
+#TopQwikFindInput {
+	FONT-SIZE: 10px
+}
+#TopQwikFindButton {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px
+}
+#TopSearchBox {
+	PADDING-LEFT: 4px
+}
+#TopSearchInput {
+	FONT-SIZE: 10px; WIDTH: 65px
+}
+#TopSearchButton {
+	PADDING-LEFT: 4px
+}
+#TopSearchLink {
+	PADDING-LEFT: 4px
+}
+.mono {
+	FONT-SIZE: 10px; FONT-FAMILY: "Courier New", Courier, mono
+}

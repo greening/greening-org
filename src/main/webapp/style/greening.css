@@ -1,0 +1,152 @@
+.imgcaption {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	text-align: center;
+	margin-bottom: 2ex;
+}
+
+.contact {
+	font-family: Georgia, Century, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	text-indent: 0pt;
+	margin-top: 0px;
+	margin-bottom: 1ex;
+	padding: 0px;
+}
+
+
+ul {
+	font-family: Georgia, Century, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	margin-bottom: 20px;
+}
+li {
+	font-family: Georgia, Century, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	margin-bottom: 1ex;
+}
+div.contact p {
+	text-indent: 0pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+table.list td {
+
+
+	font-family: Georgia, Century, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	vertical-align: top;
+}
+table.list th {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	vertical-align: top;
+	text-align: left;
+	padding-right: 10px;
+}
+#nav {
+
+	left: 5px;
+	top: 50px;
+	position: absolute;
+	width: 140px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	display: inline;
+}
+body>#nav {
+
+	position: fixed;
+}
+div#nav p,div#navhome p {
+
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+div#title {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16pt;
+	font-weight: bold;
+	position: absolute;
+	left: 150px;
+	top: 7px;
+	width: 500px;
+	vertical-align: middle;
+	text-align: center;
+	height: 33px;
+}
+div#navhome {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	position: absolute;
+	width: 140px;
+	left: 5px;
+	top: 10px;
+	vertical-align: middle;
+	text-align: left;
+	height: 30px;
+	font-weight: bold;
+}
+body>div#navhome {
+
+	position: fixed;
+}
+div.body p {
+
+
+
+
+	font-family: Georgia, Century, "Times New Roman", Times, serif;
+	font-size: 9pt;
+	text-align: justify;
+	text-indent: 4ex;
+	vertical-align: top;
+	font-weight: normal;
+	margin-top: 0px;
+}
+div.body {
+
+
+
+	font-size: 9pt;
+	position: absolute;
+	top: 50px;
+	visibility: visible;
+	left: 150px;
+	overflow: visible;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 500px;
+}
+div.body h1 {
+
+
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 12pt;
+	margin-bottom: 0px;
+}
+div.body > p:first-child {
+
+
+	text-indent: 0pt;
+}
+div.body div.contact p {
+
+	text-indent: 0pt;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+<!-- /* $WEFT -- Created by: Dan R Greening (dan@greening.org) on 12/29/2002 -- */
+  @font-face {
+    font-family: Georgia;
+    font-style:  normal;
+    font-weight: normal;
+    src: url(GEORGIA3.eot);
+  }
+  

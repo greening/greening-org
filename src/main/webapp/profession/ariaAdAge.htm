@@ -1,0 +1,737 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0041)http://www.adage.com/news.cms?newsId=1065 -->
+<HTML><HEAD><TITLE>Data plays key role in Net success</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><LINK 
+href="ariaAdAge_files/default.css" type=text/css rel=stylesheet>
+<STYLE>.ThemeColor {
+	BACKGROUND-COLOR: #336699
+}
+.Timestamp {
+	PADDING-RIGHT: 10px; FONT-SIZE: 9px; COLOR: #ffffff
+}
+.topnavBG {
+	BACKGROUND-COLOR: #336699
+}
+.topnavLabel {
+	COLOR: #ffcc99
+}
+.topnavLink {
+	COLOR: #ffffff
+}
+A.topnavLink {
+	COLOR: #ffffff
+}
+A.topnavLink:link {
+	COLOR: #ffffff
+}
+A.topnavLink:visited {
+	COLOR: #ffffff
+}
+.leftBG {
+	COLOR: #ffffff; BACKGROUND-COLOR: #000000
+}
+.leftadBG {
+	BACKGROUND-COLOR: #000000
+}
+.leftnavBG {
+	BACKGROUND-COLOR: #336699
+}
+A.leftnavCurrent {
+	COLOR: #ffcc66
+}
+.leftnavCurrent {
+	COLOR: #ffcc66
+}
+A.leftnavCurrent:link {
+	COLOR: #ffcc66
+}
+A.leftnavCurrent:visited {
+	COLOR: #ffcc66
+}
+A.leftnavCurrent:hover {
+	COLOR: #ffcc66
+}
+.leftnav {
+	COLOR: #ffffff
+}
+A.leftnav {
+	COLOR: #ffffff
+}
+A.leftnav:link {
+	COLOR: #ffffff
+}
+A.leftnav:visited {
+	COLOR: #ffffff
+}
+A.leftnav:hover {
+	COLOR: #ffffff
+}
+A.leftnav:hover {
+	COLOR: #ffcc66
+}
+.bottomnav {
+	COLOR: #ffffff; BACKGROUND-COLOR: #336699
+}
+.bottomnav A {
+	COLOR: #ffffff
+}
+.bottomnav A:link {
+	COLOR: #ffffff
+}
+.bottomnav A:visited {
+	COLOR: #ffffff
+}
+.TableTitleSmall {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #ffffff; BACKGROUND-COLOR: #336699; TEXT-ALIGN: center
+}
+.TableHeaderSmall {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; BACKGROUND-COLOR: #ffcc66
+}
+.TableHeaderSmall A {
+	COLOR: #000000
+}
+.TableHeaderSmall A:link {
+	COLOR: #000000
+}
+.TableHeaderSmall A:visited {
+	COLOR: #000000
+}
+.TableCellSmall {
+	FONT-SIZE: 11px; COLOR: #000000; BACKGROUND-COLOR: #eeeedd
+}
+</STYLE>
+
+<SCRIPT language=JavaScript>
+<!--
+//+PMA 1.3.2002 Added for oas tags.
+var ckJobTitle          = "jobTitle";
+var ckBusinessType      = "businessType";
+var ckCurrentSubscriber = "currentSubscriber";
+var ckCountry           = "country";
+var ckState             = "state";
+
+function GetCookie (name) {
+    var arg = name + "=";
+    var alen = arg.length;
+    var clen = document.cookie.length;
+    var i = 0;
+    while (i < clen) {
+        var j = i + alen;
+        if (document.cookie.substring(i, j) == arg)
+            return getCookieVal (j);
+        i = document.cookie.indexOf(" ", i) + 1;
+        if (i == 0) break;
+    }
+    return null;
+}
+
+function SetCookie (name, value) {
+    var argv = SetCookie.arguments;
+    var argc = SetCookie.arguments.length;
+    var expires = (argc > 2) ? argv[2] : null;
+    var path = (argc > 3) ? argv[3] : null;
+    var domain = (argc > 4) ? argv[4] : null;
+    var secure = (argc > 5) ? argv[5] : false;
+    document.cookie = name + "=" + escape (value) +
+    ((expires == null) ? "" : ("; expires=" + expires.toGMTString())) +
+    ((path == null) ? "" : ("; path=" + path)) +
+    ((domain == null) ? "" : ("; domain=" + domain)) +
+    ((secure == true) ? "; secure" : "");
+}
+
+function DeleteCookie (name) {
+    var exp = new Date();
+    exp.setTime (exp.getTime() - 1);
+    var cval = GetCookie (name);
+    document.cookie = name + "=" + cval + "; expires=" + exp.toGMTString();
+}
+
+function getCookieVal(offset) {
+    var endstr = document.cookie.indexOf (";", offset);
+    if (endstr == -1)
+        endstr = document.cookie.length;
+    return unescape(document.cookie.substring(offset, endstr));
+}
+function SwapCharactersInString(fullString, stringToSwap, stringToSwapWith)
+{
+  
+  var returnString = '';
+  var charString;
+  var i = 0;
+  while (i < fullString.length)
+  {
+    charString = fullString.charAt(i);
+    if (charString == stringToSwap)
+	{
+	  charString = stringToSwapWith;
+	}
+	returnString = returnString + charString;
+
+    i++;
+
+  }
+
+  return returnString;
+}
+//End of 1.3.2002
+	//configuration
+	OAS_url = 'http://oascentral.adage.com/RealMedia/ads/';
+
+
+	OAS_sitepage = 'www.adage.com/other/story';
+	OAS_listpos = 'Top1,Top2,Left1,Left2,Left3,Right1';
+
+OAS_query = '';
+//+PMA 1.3.2002 Added for oas tags.
+//if (OAS_query == '')
+//{
+  cookieValue = GetCookie(ckJobTitle);
+  if (cookieValue != null)
+  {
+    if (OAS_query != '')
+	{
+	  OAS_query = OAS_query.concat("&");
+	}
+    OAS_query = OAS_query + "jobTitle=";
+    OAS_query = OAS_query + cookieValue;
+  }
+
+  cookieValue = GetCookie(ckBusinessType);
+  if (cookieValue != null)
+  {
+    if (OAS_query != '')
+	{
+	  OAS_query = OAS_query.concat("&");
+	}
+    OAS_query = OAS_query + "businessType=";
+    OAS_query = OAS_query + cookieValue;
+  }
+
+  cookieValue = GetCookie(ckCurrentSubscriber);
+  if (cookieValue != null)
+  {
+    if (OAS_query != '')
+	{
+	  OAS_query = OAS_query.concat("&");
+	}
+	OAS_query = OAS_query + "currentSubscriber=";
+    OAS_query = OAS_query + cookieValue;
+  }
+
+  cookieValue = GetCookie(ckCountry);
+  if (cookieValue != null)
+  {
+    if (OAS_query != '')
+	{
+	  OAS_query = OAS_query.concat("&");
+	}
+	OAS_query = OAS_query + "country=";
+    OAS_query = OAS_query + cookieValue;
+  }
+
+  cookieValue = GetCookie(ckState);
+  if (cookieValue != null)
+  {
+    if (OAS_query != '')
+	{
+	  OAS_query = OAS_query.concat("&");
+	}
+	OAS_query = OAS_query + "state=";
+    OAS_query = OAS_query + cookieValue;
+  }
+
+  OAS_query = SwapCharactersInString (OAS_query, " ", "+");
+
+//}
+//End of 1.3.2002
+	OAS_target = '_top';
+	
+	// we don't need the javascript OAS_rns 'cause we are going to use the cms:var OASrns 
+	// we will also reverse engineer the OAS_rn
+	OAS_rns = "1677341303";
+	OAS_rn = new String (Math.random());
+	OAS_rn = OAS_rn.substring (2,4) + OAS_rns;
+	
+	function OAS_RICH(pos) {
+		var AdTag = '<A HREF="' + window.OAS_url + 'click_nx.ads/' + window.OAS_sitepage + '/1' + window.OAS_rns + '@' + window.OAS_listpos + '!' + pos + '?' + window.OAS_query + '" TARGET=' + window.OAS_target + '>';
+		AdTag += '<IMG SRC="' + window.OAS_url + 'adstream_nx.ads/' + window.OAS_sitepage + '/1' + window.OAS_rns + '@' + window.OAS_listpos + '!' + pos + '?' + '" BORDER=0></A>';
+		document.write (AdTag);
+	}
+
+	/*
+		We aren't writing out the included script any more
+		document.write('<SCRIPT LANGUAGE=JavaScript1.1 SRC="' + OAS_url + 'adstream_mjx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@' + OAS_listpos + '?' + OAS_query + '"><\/SCRIPT>');
+	*/
+
+
+
+
+	function Get12Hour (n) {
+		if (n>12) {
+			//return (n%13 + 1);
+			return (n%12)
+		}
+		else if (n < 1) {
+			return (12)
+		}
+		else {
+			return (n)
+		}
+	}
+	function GetAmPm (n) {
+		if (n<12) {
+			return ("a.m.")
+		}
+		else {
+			return ("p.m.")
+		}
+	}
+	function PadMinute (n) {
+		if (n<10) {
+			return ("0" + n.toString());
+		}
+		else {
+			return (n);
+		}
+	}
+	function TodaysDate() {
+		days = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');
+		months = new Array('Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sept.', 'Oct.', 'Nov.', 'Dec.')
+		var dt = new Date();
+		var TodaysDate = "";
+		TodaysDate += months[dt.getMonth()] + " ";
+		TodaysDate += dt.getDate() + ", ";
+		TodaysDate += dt.getFullYear() + " ";
+		TodaysDate += Get12Hour (dt.getHours()) + ":";
+		TodaysDate += PadMinute (dt.getMinutes()) + " ";
+		TodaysDate += GetAmPm (dt.getHours());
+		document.write(TodaysDate);
+	}
+//-->
+</SCRIPT>
+
+<SCRIPT language=JavaScript1.1 
+src="ariaAdAge_files/11677341303@Top1,Top2,Left1,Left2,Left3,Right1"></SCRIPT>
+
+<SCRIPT language=JavaScript>
+<!--
+	function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+	  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+		document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+	  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+	}
+	MM_reloadPage(true);
+	
+	function OpenBrWindow(theURL,winName,features) { //v2.0
+		var popwin = window.open(theURL,winName,features);
+		return popwin;
+	}
+	
+	function PrintPage() {
+		if (window.print) {
+			window.print();
+		}
+		else {
+			alert("Sorry, your browser doesn't support this feature.");
+		}
+	}
+
+	function WriteAd (AdPos, LayerName, LayerTop, LayerLeft, LayerWidth, Prefix, Suffix) {
+		if (document.layers) {
+			document.write ('<layer id="' + LayerName + '" top="' + LayerTop + '" left="' + LayerLeft + '" width="' + LayerWidth + '" z-index="99">');
+			for (var i=0; i<AdPos.length; i++) {
+				document.write (Prefix);
+				window.OAS_RICH(AdPos[i]);
+				document.write (Suffix);
+			}
+			document.write ('</layer>');
+		}
+		else {
+			document.write ('<div id="' + LayerName + '" style="position: absolute; top: ' + LayerTop + 'px; left: ' + LayerLeft + 'px;">');
+			for (var i=0; i<AdPos.length; i++) {
+				document.write (Prefix);
+				window.OAS_RICH(AdPos[i]);
+				document.write (Suffix);
+			}
+			document.write ('</div>');
+		}
+	}
+//-->
+</SCRIPT>
+
+<META content="MSHTML 6.00.2716.2200" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff leftMargin=0 topMargin=0 marginheight="0" marginwidth="0">
+<DIV id=DivLogo style="LEFT: 0px; POSITION: absolute; TOP: 0px"><A 
+href="http://www.adage.com/"><IMG height=86 
+src="ariaAdAge_files/336699-logo.gif" width=269 border=0></A></DIV>
+<DIV id=DivTopBar style="LEFT: 0px; POSITION: absolute; TOP: 71px">
+<FORM name=SearchBar action=/search.cms method=post>
+<TABLE cellSpacing=2 cellPadding=0 border=0>
+  <TBODY>
+  <TR vAlign=middle>
+    <TD class=topnavSectionTitle noWrap>&nbsp;Other</TD>
+    <TD title="Enter Code from Print Edition" noWrap>
+      <DIV class=topnavLabel id=TopQwikFindTitle 
+      >&nbsp;QwikFIND<SUP>TM</SUP>&nbsp;&nbsp;</DIV></TD>
+    <TD id=TopQwikFindBox title="Enter Code from Print Edition"><INPUT 
+      id=TopQwikFindInput maxLength=6 size=6 name=QwikFindId></TD>
+    <TD id=TopQwikFindButton title="Enter Code from Print Edition"><INPUT 
+      class=button type=image height=17 width=32 src="ariaAdAge_files/find.gif" 
+      value=" Find " border=0 name=SubmitButton></TD>
+    <TD title="Enter Code from Print Edition" vAlign=middle><A 
+      class=topnavLink title="About QwikFind" 
+      href="http://www.adage.com/page.cms?pageId=10">About<BR>QwikFIND</A></TD>
+    <TD width=32><IMG height=41 src="ariaAdAge_files/669966-separator.gif" 
+      width=32></TD>
+    <TD title="All Text Search" noWrap>
+      <DIV class=topnavLabel >Search&nbsp;</DIV></TD>
+    <TD id=TopSearchBox title="All Text Search"><INPUT id=TopSearchInput 
+      size=10 name=AnyWords></TD>
+    <TD id=TopSearchButton title="All Text Search" noWrap><INPUT class=button 
+      type=image height=17 width=26 src="ariaAdAge_files/go.gif" value=" Go " 
+      border=0 name=SubmitButton></TD>
+    <TD id=TopSearchLink title="Link to Advanced Search Page"><A 
+      class=topnavLink 
+      href="http://www.adage.com/search.cms">Advanced<BR>Search</A></TD>
+    <TD class=Timestamp noWrap align=right width="100%">July 14, 
+  2002</TD></TR></TBODY></TABLE></FORM></DIV>
+<TABLE class=topnavBG cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <TD width=139 bgColor=#000000><IMG height=71 
+      src="ariaAdAge_files/spacer.gif" width=139></TD>
+    <TD width=130 bgColor=#000000><IMG height=71 
+      src="ariaAdAge_files/spacer.gif" width=130></TD>
+    <TD width=10 bgColor=#000000><IMG height=71 
+      src="ariaAdAge_files/spacer.gif" width=10></TD>
+    <TD align=right bgColor=#000000>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD><IMG src="ariaAdAge_files/spacer.gif"></TD>
+          <TD align=right>
+            <SCRIPT language=Javascript>window.OAS_RICH("Top1")</SCRIPT>
+          </TD>
+          <TD><IMG height=71 src="ariaAdAge_files/spacer.gif" width=5></TD>
+          <TD align=right>
+            <SCRIPT language=Javascript>window.OAS_RICH("Top2")</SCRIPT>
+          </TD></TR></TBODY></TABLE></TD>
+    <TD width="100%" bgColor=#000000><IMG height=45 
+      src="ariaAdAge_files/spacer.gif" width=11></TD></TR>
+  <TR vAlign=top>
+    <TD width=139><IMG height=45 src="ariaAdAge_files/spacer.gif" 
+width=139></TD>
+    <TD width=130><IMG height=45 src="ariaAdAge_files/spacer.gif" 
+width=130></TD>
+    <TD width=10><IMG height=45 src="ariaAdAge_files/spacer.gif" width=10></TD>
+    <TD colSpan=2><IMG height=45 src="ariaAdAge_files/spacer.gif" 
+  width=10></TD></TR>
+  <TR vAlign=top>
+    <TD width=139><IMG height=16 src="ariaAdAge_files/336699-top.gif" 
+      width=139></TD>
+    <TD width=130 bgColor=#ffffff><IMG height=21 
+      src="ariaAdAge_files/spacer.gif" width=130></TD>
+    <TD width=10 bgColor=#ffffff><IMG height=21 
+      src="ariaAdAge_files/spacer.gif" width=10></TD>
+    <TD bgColor=#ffffff colSpan=2><IMG height=21 
+      src="ariaAdAge_files/spacer.gif" width=10></TD></TR></TBODY></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width=765 border=0>
+  <TBODY>
+  <TR vAlign=top>
+    <TD class=leftBG width=139>
+      <TABLE class=leftnavBG cellSpacing=0 cellPadding=0 width=139 border=0>
+        <TBODY>
+        <TR>
+          <TD width=10><IMG height=10 src="ariaAdAge_files/spacer.gif" 
+            width=10></TD>
+          <TD width=119><A class=leftnav  
+            href="http://www.adage.com/">Home</A><BR><A class=leftnav 
+             
+            href="http://www.adage.com/section.cms">News</A><BR><A class=leftnav 
+             
+            href="http://www.adage.com/section.cms?sectionId=7">Interactive 
+            News</A><BR><A class=leftnav  
+            href="http://www.adage.com/section.cms?sectionId=2">Media 
+            News</A><BR><A class=leftnav  
+            href="http://www.adage.com/section.cms?sectionId=3">People</A><BR><A 
+            class=leftnav  
+            href="http://www.adage.com/section.cms?sectionId=4">Viewpoint</A><BR><A 
+            class=leftnav  
+            href="http://www.adage.com/section.cms?sectionId=5">Account 
+            Action</A><BR><A class=leftnav  
+            href="http://www.adage.com/datacenter.cms">Data Center</A><BR><IMG 
+            height=10 src="ariaAdAge_files/336699-separator.gif" 
+            width=119><BR><A class=leftnav  
+            href="http://www.adage.com/reports.cms">Special Reports</A><BR><A 
+            class=leftnav  
+            href="http://www.crain.com/classified/adage/index.cfm">Career 
+            Center</A><BR><IMG height=10 
+            src="ariaAdAge_files/336699-separator.gif" width=119><BR><A 
+            class=leftnav  
+            href="http://www.adage.com/myadage.cms">My AdAge</A><BR><A 
+            class=leftnav  
+            href="http://www.adage.com/page.cms?pageId=4">Print 
+            Edition</A><BR><A class=leftnav  
+            href="http://www.adage.com/page.cms?pageId=5">Customer 
+            Services</A><BR><A class=leftnav  
+            href="http://www.adage.com/page.cms?pageId=1">About Us</A><BR><A 
+            class=leftnav  
+            href="http://www.craini2i.com/aamedia/kit.mv">Media Kit</A><BR><A 
+            class=leftnav
+            href="http://www.adage.com/page.cms?pageId=3">Privacy 
+            Statement</A><BR><IMG height=10 
+            src="ariaAdAge_files/336699-separator.gif" width=119><BR><A 
+            class=leftnav  
+            href="http://www.adreview.com/">AdReview.com</A><BR><A class=leftnav 
+          
+            href="http://www.adageglobal.com/">AdAgeGlobal.com</A><BR><A 
+            class=leftnav
+            href="http://www.getcreativity.com/">GetCreativity.com</A><BR><A 
+            class=leftnav 
+            href="http://www.agencypreview.com/">Agency Preview</A><BR></TD>
+          <TD width=10><IMG height=10 src="ariaAdAge_files/spacer.gif" 
+            width=10></TD></TR>
+        <TR>
+          <TD colSpan=3><IMG height=15 src="ariaAdAge_files/336699-bottom.gif" 
+            width=139></TD></TR></TBODY></TABLE>
+      <TABLE class=leftadBG cellSpacing=0 cellPadding=0 width=139 border=0>
+        <TBODY>
+        <TR>
+          <TD><IMG height=13 src="ariaAdAge_files/leftad-top.gif" 
+        width=139></TD></TR>
+        <TR>
+          <TD align=center>
+            <P>
+            <SCRIPT language=JavaScript>
+						<!--
+							OAS_RICH("Left1");
+						//-->
+						</SCRIPT>
+            </P>
+            <P>
+            <SCRIPT language=JavaScript>
+						<!--
+							OAS_RICH("Left2");
+						//-->
+						</SCRIPT>
+            </P>
+            <P>
+            <SCRIPT language=JavaScript>
+						<!--
+							OAS_RICH("Left3");
+						//-->
+						</SCRIPT>
+            </P>
+            <P>&nbsp;</P>
+            <P>&nbsp;</P></TD></TR></TBODY></TABLE></TD>
+    <TD><IMG height=16 src="ariaAdAge_files/spacer.gif" width=19></TD>
+    <TD align=left colSpan=3>
+      <DIV class=ArticleBody><IMG height=64 
+      src="ariaAdAge_files/email-print.gif" width=392 useMap=#EmailPrintLinkMap 
+      border=0> <MAP name=EmailPrintLinkMap><AREA shape=RECT 
+        coords=0,12,124,54 
+        href="http://www.adage.com/emailFriend.cms?newsId=1065"><AREA 
+        onclick=PrintPage() shape=RECT coords=132,11,243,54 
+        href="http://www.adage.com/news.cms?newsId=1065#"><AREA 
+        title="This feature is available to registered user only. Registered Now!" 
+        onclick=LinkRegistration shape=RECT coords=252,11,392,55 
+        href="http://www.adage.com/news.cms?newsId=1065#"></MAP>
+      <DIV class=ArticleHeadline>Data plays key role in Net success</DIV>
+      <DIV class=ArticleTimeStamp>August 02, 1999</DIV>
+      <DIV class=ArticleQwikFindID><B>QwikFIND ID: </B>AAA40Z</DIV>
+      <DIV class=ArticleAuthor>By <A href="mailto:">Debra Aho Williamson</A> 
+      </DIV>
+      <P>
+      <P>
+      <P>
+      <P>It's a marketer's dream--and worst nightmare: Being able to watch your 
+      customers' every move, but possessing only limited tools to influence 
+      them. 
+      <P>Web sites long have struggled with how to manage the mother lode of 
+      data at their disposal, but new power tools provide a solution--assuming 
+      marketers can figure out how to operate the tools. 
+      <P>Many software companies claim to help Web marketers track who clicks 
+      where, when and even why. Not only that, but what information or service 
+      consumers want and how best to deliver it. 
+      <P><B>MORE THAN CRUNCHING</B> 
+      <P>"I don't know how, going forward, you will manage sites without having 
+      some data about what customers are doing and what they want," said Mary 
+      Jane Crain, a marketing specialist with the U.S. Postal Service's Internet 
+      Business Group. 
+      <P>But as the Postal Service is learning, crunching data is one thing; 
+      acting upon it is much more challenging. 
+      <P>The Postal Service a year ago began using Web-site analysis software 
+      from Andromedia, San Francisco. Andromedia's package, called Aria, helps 
+      site owners track visitors' paths, tracing where they came in, how many 
+      pages they viewed, when they came and how long they stayed. The software 
+      also can generate reports categorizing visitors or measuring the 
+      effectiveness of promotions. 
+      <P>"We really needed a real-time solution to suit all the functional 
+      organizations" within the Postal Service, said Jennifer Spitz, Web quality 
+      assurance specialist. "We needed a solution to allow each of those content 
+      owners to address their specific concerns." 
+      <P><B>MAKING AN IMPACT</B> 
+      <P>Andromedia's software competes with a host of data tool suppliers 
+      ranging from Accrue Software to high-end data-mining software from Oracle 
+      Corp., E.piphany and DataSage. The post office paid more than $100,000 for 
+      Aria software and services, Ms. Spitz said. 
+      <P>The software has enabled the Postal Service to measure the impact of 
+      advertising on Web site traffic. 
+      <P>For example, the recent "Fly Like an Eagle" ad campaign from Foote, 
+      Cone &amp; Belding, New York, featured the usps.com Web address. The 
+      Postal Service's actual URL is www.usps.gov. But usps.com also delivers 
+      traffic to the site, and the post office wanted to build the trendier 
+      "dot-com" address as a brand. 
+      <P>Last October, well before the campaign began, only 0.5% of all visits 
+      to the Postal Service site came through usps.com. But in March, at the 
+      height of the campaign, 1.3% of visits came through that address, 
+      according to information from Aria. 
+      <P>"What that begins to show you is that some impact was had by those 
+      commercials," said Ms. Spitz. 
+      <P>But the influence apparently wasn't all that great, given the 0.8 
+      percentage point rise. 
+      <P>In another instance, the Postal Service in March broke an FCB ad 
+      campaign promoting a delivery confirmation service, which includes the 
+      ability to track package delivery online. In early March, before the 
+      campaign began, 6% of site visitors made the Track/Confirm page their 
+      second click upon visiting the site. By the end of March, 14% of people 
+      hit the area on their second click, making it the second most popular 
+      place to visit on the site, Ms. Spitz said. The home page remained the 
+      most popular destination. 
+      <P>The Postal Service determined that only about 50% of people who visited 
+      the Track/Confirm page in a recent week in July actually tracked a 
+      package. As a result, the feature may be changed to make tracking easier. 
+      <P>Measuring the effectiveness of advertising is only one challenge facing 
+      the Postal Service. Spurred by private-sector rivals, such as Federal 
+      Express Corp. and United Parcel Service of America, the Postal Service is 
+      readying a series of e-commerce initiatives. 
+      <P>As the Postal Service ramps up with e-commerce, the need for data grows 
+      exponentially. How do people shop? Do they put things into their virtual 
+      shopping cart and then take them out? Do they abandon a transaction 
+      without completing it? The Postal Service is considering upgrading to a 
+      version of Aria that tracks such activity. 
+      <P>"If you knew that someone was particularly interested in stamps, 
+      because they went to that page, then you would know to offer them 
+      something about stamps," said Ms. Crain. 
+      <P><B>SNAIL'S PACE</B> 
+      <P>Though you can buy stamps through the Postal Service's site now, it's a 
+      clunky procedure. That's supposed to change by the holiday season, when 
+      the Postal Service expects to unveil an all-new site powered by e-commerce 
+      software from BroadVision. 
+      <P>In the meantime, the post office has several 
+      <P>e-commerce tests under way, including downloadable digital postage, in 
+      conjunction with 
+      <P>E-Stamp Corp. and Stamps.com, and a service enabling a business to 
+      design a mailing, transmit it to a printer and have it dropped into the 
+      mail, all electronically. 
+      <P>Like many marketers making a transition from street-based business to 
+      online business, the Postal Service is moving slowly in its use of 
+      Internet data--perhaps more slowly than most, due to many layers of 
+      bureaucracy and the physical distance between its Washington headquarters 
+      and its technology group, based in San Mateo, Calif. 
+      <P>The Postal Service's Internet Business Group acts as a liaison between 
+      the two far-flung arms, but Ms. Crain acknowledges "it's a challenge--how 
+      to respond at Internet speed." 
+      <P><B>STATS CAN BE OVERWHELMING</B> 
+      <P>The biggest challenge, however, is getting Postal Service executives to 
+      use the data. 
+      <P>"To date, we haven't perhaps used it as much as we could," said Ms. 
+      Crain. "We've been getting a lot of statistics on a daily basis, and that 
+      can overwhelm you." 
+      <P>Contributing to the problem: Not enough managers know how to use Aria. 
+      That's led Ms. Spitz to start conducting training seminars. 
+      <P>"The most important thing is to teach people the interface," she said. 
+      "Nine times out of 10, they can get exactly what they're looking for--if 
+      they know what they're looking for." 
+      <P>That's where Internet data analysis reaches its stumbling block. 
+      Businesspeople acknowledge its need, but they're not sure what to ask for, 
+      or how to use the information once they have it. 
+      <P>Give the Postal Service credit for recognizing that it needs to 
+      understand data before managing its Web business. But until it figures out 
+      how to act on the data, it will lag private-sector rivals. 
+      <P>Debra Aho Williamson this month joins <I>Advertising Age</I> as a 
+      contributing editor. Ms. Williamson, a Mercer Island, Wash.-based 
+      journalist covering Internet business issues, writes the monthly Inside 
+      the Web case study. Send case study ideas to her at debbie@milestone2.com 
+      or Editor Bradley Johnson at bradjohnson@csi.com. 
+      <P><B>Copyright August 1999, Crain Communications Inc.</B> </P>
+      <P>&nbsp;</P>
+      <DIV class=RelatedLinksTitle>Breaking News<BR><IMG height=9 
+      src="ariaAdAge_files/336699-separator-solid.gif" width=392></DIV>
+      <DIV class=ArticlePreviousHeadline><A 
+      href="http://www.adage.com/news.cms?newsId=35460">MONSTER.COM TAPS 
+      DRAFTWORLDWIDE</A><BR>Job Site Looks for Direct-Response TV Campaign 
+      <BR><IMG height=13 
+      src="C:\Greening\My Webs\greening\profession\ariaAdAge_files\336699-separator(1).gif" 
+      width=387> </DIV>
+      <DIV class=ArticlePreviousHeadline><A 
+      href="http://www.adage.com/news.cms?newsId=35459">NBC BOOSTS GE'S 
+      PROFITS</A><BR>TV Network Benefitted From Strong Upfront, Scatter Market 
+      <BR><IMG height=13 
+      src="C:\Greening\My Webs\greening\profession\ariaAdAge_files\336699-separator(1).gif" 
+      width=387> </DIV>
+      <DIV class=ArticlePreviousHeadline><A 
+      href="http://www.adage.com/news.cms?newsId=35453">BURGER KING DROPS D'ARCY 
+      AND MEDIAVEST</A><BR>Puts $250 Million Account With Deutsch, Media First 
+      International <BR><IMG height=13 
+      src="C:\Greening\My Webs\greening\profession\ariaAdAge_files\336699-separator(1).gif" 
+      width=387> </DIV>
+      <DIV class=ArticlePreviousHeadline><A 
+      href="http://www.adage.com/news.cms?newsId=35451">SEARCH IS ON FOR NEW AOL 
+      BOSS</A><BR>Troubled Online Unit Currently Headed by COO Bob Pittman 
+      <BR><IMG height=13 
+      src="C:\Greening\My Webs\greening\profession\ariaAdAge_files\336699-separator(1).gif" 
+      width=387> </DIV>
+      <DIV class=ArticlePreviousHeadline><A 
+      href="http://www.adage.com/news.cms?newsId=35448">JEAN COMPETITORS GEAR UP 
+      FOR FALL</A><BR>Sexy Campaigns Target Back-to-School Crowd <BR><IMG 
+      height=13 
+      src="C:\Greening\My Webs\greening\profession\ariaAdAge_files\336699-separator(1).gif" 
+      width=387> </DIV>
+      <DIV class=ArticlePreviousHeadline><A 
+      href="http://www.adage.com/news.cms?newsId=35447">DDB GETS $25 MILLION 
+      LIPTON ACCOUNT</A><BR>Bartle Bogle Previously Handled Work <BR><IMG 
+      height=13 
+      src="C:\Greening\My Webs\greening\profession\ariaAdAge_files\336699-separator(1).gif" 
+      width=387> </DIV></DIV></TD>
+    <TD><IMG height=16 src="ariaAdAge_files/spacer.gif" width=14></TD>
+    <TD width=189><IMG height=34 src="ariaAdAge_files/spacer.gif" width=189>
+      <SCRIPT language=Javascript>
+	<!--
+		OAS_RICH("Right1");
+	//-->
+	</SCRIPT>
+       <IMG height=34 src="ariaAdAge_files/spacer.gif" width=189> </TD>
+    <TD><IMG height=16 src="ariaAdAge_files/spacer.gif" width=12></TD>
+    <TD><IMG height=16 src="ariaAdAge_files/spacer.gif" width=1></TD></TR>
+  <TR vAlign=top>
+    <TD class=leftBG>&nbsp;</TD>
+    <TD></TD>
+    <TD>
+      <P>&nbsp;</P>
+      <P class=footer><A href="http://www.bpai.com/"><IMG height=53 
+      src="ariaAdAge_files/bpa_footer.gif" width=295 border=0></A><BR>Copyright 
+      © 2002, <A href="http://www.crain.com/">Crain Communications</A> Inc. - <A 
+      href="http://www.adage.com/page.cms?pageId=3">Privacy Statement</A><BR><A 
+      href="http://www.chaffee.com/">Chaffee Interactive, Inc.</A>: Programming, 
+      Technology &amp; Hosting Services <BR><!--Designed by <a href="http://www.redstapler.com">Red Stapler.com</a>
+				<br> -->&nbsp; 
+      </P></TD>
+    <TD></TD>
+    <TD></TD>
+    <TD></TD>
+    <TD></TD></TR></TBODY></TABLE>
+<TABLE class=bottomnav cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR vAlign=middle>
+    <TD class=leftBG width=139><IMG height=30 src="ariaAdAge_files/spacer.gif" 
+      width=139></TD>
+    <TD width=19><IMG height=16 src="ariaAdAge_files/spacer.gif" width=19></TD>
+    <TD class=bottomnav width="100%"><A 
+      href="http://www.adage.com/index.cms">Home</A> | <A 
+      href="http://www.adage.com/section.cms">News</A> | <A 
+      href="http://www.adage.com/search.cms">Search</A> | <A 
+      href="http://www.adage.com/page.cms?pageId=1">Contact Us</A> | <A 
+      href="http://www.adage.com/page.cms?pageId=9">Advertise</A> | <A 
+      href="http://www.adage.com/page.cms?pageId=5">Subscribe</A> | 
+  </TD></TR></TBODY></TABLE></BODY></HTML>

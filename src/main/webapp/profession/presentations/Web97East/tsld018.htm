@@ -1,0 +1,40 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+ <title>Compute Prediction Accuracy</title> 
+<meta name="Microsoft Border" content="none, default">
+</head>
+
+<body>
+
+ <h1>Compute Prediction Accuracy</h1> 
+ <p></p> 
+<p>
+<table>
+  <td height="100" width="100"> <a href="tsld017.htm">Previous slide</a> </td>
+  <td height="100" width="100"> <a href="tsld019.htm">Next slide</a> </td>
+  <td height="100" width="150"> <a href="tsld001.htm">Back to first slide</a> </td>
+  <td height="100" width="150"> <a href="sld018.htm">View graphic version</a> </td>
+</table>
+<br>
+</p>
+
+ <font size="4"><strong> Notes: </font></strong>
+  <hr> <p> <ul>
+Once we can generate predictions, we can figure out how accurate our engine is.
+</ul><ul>
+We do this by randomly removing a rating from a user&#146;s actual rating vector, then try to reconstruct it using the mentors.
+</ul><ul>
+To keep us honest, we should recompute the mentor weights.
+</ul><ul>
+To keep us really honest, we should resample the database and get a new set of mentors.  However, because that process could take hours, we typically don&#146;t do that.
+</ul><ul>
+Finally, we construct the prediction vector again and compare the predicted value to the removed rating.  Then we report the difference.
+</ul><ul>
+This is where we get the claim that &#147;for high confidence predictions, 90% of the time we are within 7% of a consumer&#146;s actual ratings.&#148;</ul> </p> 
+
+</body>
+</html>

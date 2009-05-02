@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="Templates/first.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Language" content="en-us" />
+<!-- InstanceParam name="Title" type="text" value="Colophon" --><!-- InstanceParam name="Home" type="boolean" value="true" -->
+
+<title>Greening: Colophon</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="style/greening.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="title">Colophon</div>
+<div class="body"><!-- InstanceBeginEditable name="Main" -->
+<p>A colophon is an inscription placed at the end of a book or manuscript containing
+  facts about its production. This site has some unique features worth mention.</p>
+<p>Viewed with a CSS2 compliant browser&#8212;such as Netscape 7.01, Mozilla
+  1.2, Opera or Phoenix 0.5&#8212;this
+  site has a fixed navigation bar on the left. If you visit the <a href="why.htm">Why?</a> page
+  you can see it in action:  scroll down and watch the nav bar.
+  Mozilla leaves it always visible, helping you move from page-to-page
+  wherever
+  you scrolled. 
+   Because Microsoft Internet Explorer
+  6 does not implement &quot;fixed positioning,&quot; it scrolls the nav bar
+  off the screen. I used a  stylesheet trick to make
+  IE consider the nav bar &quot;absolute&quot; while more advanced browsers consider
+  it &quot;fixed&quot;.</p>
+<p>CSS2-compliant browsers will  show the first paragraph of each page without
+  indent. I implemented this with another CSS2 feature, pseudo-class :first-child.
+  Again,
+  IE users will not see this.</p>
+<p>I tried to create a highly readable font scheme. The navigation aids&#8212;nav
+  bar, title, header lines&#8212;are
+   rendered in a bold sans serif font, usually Arial. The body text is rendered
+  in <a href="http://en.wikipedia.org/wiki/Georgia_%28font%29" target="ext">Georgia</a>,
+  a font designed for screen pixels. Georgia's dropped numerals lend interest
+  to the text and serifs improve fatigue-free
+  readability at small point sizes. </p>
+<p>If you are using Netscape, Mozilla or Opera, you may not see Georgia
+  correctly rendered. In the string &quot;96&quot;, the 9
+  should drop below the 6. If not, your text is  likely rendered in Times New
+  Roman. Try downloading and installing Georgia from <a href="fonts/Georgia.zip">here</a>,
+  extract the 4 TrueType files into a temporary directory, then drag them to
+  the Fonts control
+  panel. Why does it work automatically in IE? Because I instrumented this site
+  to download Georgia if not already on your computer. That behavior is standard
+  in CSS2, but only IE supports it.</p>
+<p>I designed this site for screens with 800&times;600 pixels or more.
+  However, even old browsers
+should
+present this site acceptably.</p>
+<p>The site is designed for low-bandwidth and fast rendering. This page's 
+  source file contains no  format information, which consumes bandwidth.
+  Instead, they link to shared stylesheet and font files. &lt;p&gt; tags inside
+  the &lt;div.body&gt; block
+  get rendered in Georgia, with the spacing you see here. &lt;p&gt; tags inside
+  the &lt;div.nav&gt; block
+  get rendered in Arial, with no inter-paragraph space. This reduces bandwidth
+  requirements, because your browser downloads the stylesheet only
+  once for
+  many pages. </p>
+<p>All modern browsers should display the title and body text rapidly and before
+  the navigation bar, rather than waiting for the whole page to load. That is
+  because this site uses &lt;div&gt; tags with absolute positioning
+  to separate major page components, rather than &lt;table&gt; tags.</p>
+<p>The <a href="contact.htm">Contact</a> page refers to a vCard that can be
+  downloaded directly into most contact managers. That vCard required some configuration
+  of MIME types on Apache
+    2.0 web server, which at least partly explains why more people don't put
+  vCards on their web sites.</p>
+<p>This site was developed with  <a href="http://www.macromedia.com/software/dreamweaver/">Dreamweaver
+    MX</a>, a professional web design
+  tool produced by my former employer, <a href="http://www.macromedia.com" target="ext">Macromedia</a>.
+  Fonts were encoded using Microsoft <a href="http://www.microsoft.com/typography/web/embedding/weft3/default.htm?fname=%20&fsize=">WEFT</a>.
+  The site uses the XHTML 1.0 Transitional language, making it XML compliant.</p>
+<!-- InstanceEndEditable --></div>
+<div id="navhome"><p><a href=".">Dan&nbsp;Greening&nbsp;Home</a></p></div>
+<div id="nav">
+  <p><a href="profession.htm">Profession</a></p>
+  <p><a href="publications.htm">Publications</a></p>
+  <p><a href="why.htm">Why?</a></p>
+  <p><a href="contact.htm">Contact</a></p>
+  <p><a href="thawte.htm">X.509 Certs</a></p>
+  <p><a href="colophon.htm">Colophon</a></p>
+</div>
+</body>
+<!-- InstanceEnd --></html>

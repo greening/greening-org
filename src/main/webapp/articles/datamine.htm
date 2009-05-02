@@ -1,0 +1,494 @@
+<html><!-- #BeginTemplate "Templates/article.dwt" -->
+
+<head>
+<!-- #BeginEditable "doctitle" --> 
+<title>Greening: Data Mining on the Web</title>
+<!-- #EndEditable --> 
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+p {  font-family: Georgia, "Times New Roman", Times, serif; font-size: 9pt}
+h1 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold}
+h2 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 16pt}
+h3 {  font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 14pt}
+li {  font-family: Georgia, "Times New Roman", Times, serif; font-size: 9pt}
+h5 { font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold }
+h4 { font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold ; font-size: 10pt; padding-top: 0px; padding-bottom: 0px; margin-bottom: 0px}
+body {  font-family: Georgia, "Times New Roman", Times, serif; font-size: 9pt}
+td {  font-family: Georgia, "Times New Roman", Times, serif; font-size: 9pt}
+-->
+</style>
+</head>
+
+<body>
+<table width="100%" border="0">
+  <tr valign="top" align="left"> 
+    <td> 
+      <table border="0" cellpadding="0" cellspacing="0" width="630">
+        <tr><!-- spacing row, 1 height. --> 
+          <td><img name="FwShim_Col_0" src="../Templates/shim.gif" width="179" height="1" border="0"></td>
+          <td><img name="FwShim_Col_1" src="../Templates/shim.gif" width="195" height="1" border="0"></td>
+          <td><img name="FwShim_Col_2" src="../Templates/shim.gif" width="166" height="1" border="0"></td>
+          <td><img name="FwShim_Col_3" src="../Templates/shim.gif" width="90" height="1" border="0"></td>
+        </tr>
+        <tr><!-- row 1 --> 
+          <td colspan="4"><a href="#" onMouseOut="GrpRestore('FwSimpleGroup');"  onMouseOver="GrpSwap('FwSimpleGroup','header_r1_c1','header_r1_c1_F2.gif','#942817774431');"  onClick="GrpDown('FwSimpleGroup','header_r1_c1','header_r1_c1_F4.gif','header_r1_c1_F4.gif','header_r1_c1','header_r1_c1_F3.gif','header_r1_c1_F4.gif','#942817774432');" ><img  src="../images/header/header_r1_c1.gif" name="header_r1_c1" width="630" height="38" border="0"></a></td>
+          <td><img name="FwShim_Row_0" src="../Templates/shim.gif" width="1" height="38" border="0"></td>
+        </tr>
+        <tr><!-- row 2 --> 
+          <td><a href="#" onMouseOut="GrpRestore('FwSimpleGroup');"  onMouseOver="GrpSwap('FwSimpleGroup','header_r2_c1','header_r2_c1_F2.gif','#942817774433');"  onClick="GrpDown('FwSimpleGroup','header_r2_c1','header_r2_c1_F4.gif','header_r2_c1_F4.gif','header_r2_c1','header_r2_c1_F3.gif','header_r2_c1_F4.gif','#942817774434');" ><img  src="../images/header/header_r2_c1.gif" name="header_r2_c1" width="179" height="16" border="0"></a></td>
+          <td><a href="#" onMouseOut="GrpRestore('FwSimpleGroup');"  onMouseOver="GrpSwap('FwSimpleGroup','header_r2_c2','header_r2_c2_F2.gif','#942817774435');"  onClick="GrpDown('FwSimpleGroup','header_r2_c2','header_r2_c2_F4.gif','header_r2_c2_F4.gif','header_r2_c2','header_r2_c2_F3.gif','header_r2_c2_F4.gif','#942817774436');" ><img  src="../images/header/header_r2_c2.gif" name="header_r2_c2" width="195" height="16" border="0"></a></td>
+          <td><a href="#" onMouseOut="GrpRestore('FwSimpleGroup');"  onMouseOver="GrpSwap('FwSimpleGroup','header_r2_c3','header_r2_c3_F2.gif','#942817774437');"  onClick="GrpDown('FwSimpleGroup','header_r2_c3','header_r2_c3_F4.gif','header_r2_c3_F4.gif','header_r2_c3','header_r2_c3_F3.gif','header_r2_c3_F4.gif','#942817774438');" ><img  src="../images/header/header_r2_c3.gif" name="header_r2_c3" width="166" height="16" border="0"></a></td>
+          <td><a href="#" onMouseOut="GrpRestore('FwSimpleGroup');"  onMouseOver="GrpSwap('FwSimpleGroup','header_r2_c4','header_r2_c4_F2.gif','#942817774439');"  onClick="GrpDown('FwSimpleGroup','header_r2_c4','header_r2_c4_F4.gif','header_r2_c4_F4.gif','header_r2_c4','header_r2_c4_F3.gif','header_r2_c4_F4.gif','#942817774440');" ><img  src="../images/header/header_r2_c4.gif" name="header_r2_c4" width="90" height="16" border="0"></a></td>
+          <td><img name="FwShim_Row_1" src="../Templates/shim.gif" width="1" height="16" border="0"></td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr valign="top"> 
+    <td> 
+      <table width="100%" border="0">
+        <tr> 
+          <td width="23%" valign="top"> <a href="../datamine.htm">Data Mining 
+            on the Web</a><br>
+            <a href="LMperformance.pdf">LikeMinds Performance</a><br>
+            <a href="Greening-Syndication.pdf">ICE Syndication</a><br>
+            <a href="GreeningJuly99WebTechniques.pdf">Web Traffic 
+            Analysis</a></td>
+          <td width="77%" valign="top"> <!-- #BeginEditable "article-text" --> 
+            <h1>Data Mining on the Web</h1>
+            <h3> There's Gold in that Mountain of Data</h3>
+            <h3> By Dan R. Greening </h3>
+            <p></p>
+            <p> (Copyright Web Techniques, 1999. To appear in January 2000 issue. 
+              Reproduction is prohibited.)</p>
+            <p>When visitors interact with your site, they provide information 
+              about themselves and how they respond to your content: which links 
+              visitors click, where they spend most of their time, which search 
+              terms they use, and when they browse. Some visitors may even fill 
+              out a lifestyle survey or provide names and addresses. Complex content 
+              also contains important information, such as words in articles, 
+              job descriptions and resumes, and features of competitive or complementary 
+              products. All this information is often stored in a database.</p>
+            <p> As a result, you have a lot of information on your Web visitors 
+              and content, but you probably aren't making the best use of it. 
+              Data warehouse reporting systems, such as those provided by traffic 
+              analyzers, aggregate and report facts over different dimensions. 
+              (See my article titled &quot;Tracking Users,&quot; Web Techniques, 
+              July 1999.)</p>
+            <p> These warehouse reporting systems are commonly called online analytic 
+              processing (OLAP) systems. OLAP systems can report only on directly 
+              observed and easily correlated information. They rely on you to 
+              discover patterns and decide what to do with them. OLAP systems 
+              won't tell you that people frequently buy potato chips, onion soup 
+              mix, and sour cream at the same time, and they won't discover that 
+              some people love any movie that contains an explosion. The information 
+              is even too complex for humans to discover these patterns using 
+              an OLAP system.</p>
+            <p> To solve this problem, marketers and business analysts use data-mining 
+              techniques. These are machine learning algorithms that find buried 
+              patterns in databases, and report or act on those findings. There 
+              are many data-mining techniques, and it's difficult for one person 
+              to understand the entire field. The best we can do in one article 
+              is provide an introduction to the problems that data-mining techniques 
+              can solve, mention the techniques usually applied to those problems, 
+              and give some insight into vendors offering solutions.</p>
+            <h2> Know Your Visitor</h2>
+            <p> To use data mining on your Web site, you have to establish and 
+              record visitor and item characteristics, and visitor interactions.</p>
+            <p> Visitor characteristics include demographics, psychographics, 
+              and technographics. Demographics are tangible attributes such as 
+              home address, income, purchasing responsibility, or recreational 
+              equipment ownership. Psychographics are personality types that might 
+              be revealed in a psychological survey, such as highly protective 
+              feelings toward children (commonly called &quot;gatekeeper moms&quot;), 
+              impulse-buying tendencies, early technology interest, and so on. 
+              Technographics are attributes of the visitor's system, such as operating 
+              system, browser, domain, and modem speed. If you have a phone number 
+              or address, you can sometimes obtain household demographic or psychographic 
+              information through direct marketing service providers, such as 
+              Webcraft or Acxiom. Business demographics are available through 
+              Dun &amp; Bradstreet.</p>
+            <p> Item characteristics include Web content information-media type, 
+              content category, URL-as well as product information-SKU (stock-keeping 
+              unit, basically a product number), product category, color, size, 
+              price, margin, available quantities, promotion level, and so on.</p>
+            <p> Visitor statistics accumulate when visitors interact with items, 
+              the Web site, or the company. Visitor-item interactions include 
+              purchase history, advertising history, and preference information. 
+              Purchase history is a list of products and purchase dates. Advertising 
+              history indicates which items were shown to a visitor. Preference 
+              information refers to item ratings provided by a visitor. Click-stream 
+              information is a history of hyperlinks that a visitor has clicked 
+              on. Link opportunities are hyperlinks that have been presented to 
+              a visitor.</p>
+            <p> Visitor-site statistics are typically per-session characteristics, 
+              such as total time, pages viewed, revenue, and profit per session 
+              with a visitor. Visitor-company information might include total 
+              number of customer referrals from a visitor, total profit, total 
+              page views, number of visits per month, last visit, and so on. Visitor-company 
+              information can include brand measurements. Brand associations, 
+              for example, are lists of positive or negative concepts a visitor 
+              associates with the brand, which can be measured by surveying visitors 
+              periodically. Permissions are attributes that a visitor provides 
+              indicating how marketing information contributed by the visitor 
+              can be used, such as permission to send email, to share information 
+              with marketing partners, and so on.</p>
+            <p> If you do nothing else in response to this article, I urge you 
+              to do two things: First, decide how you might use information recorded 
+              about your site's visitors, write a privacy statement, and make 
+              that statement available on your Web site. See www.truste.org for 
+              assistance. Think about privacy from the visitor's point of view. 
+              Visitors prefer to view products and pages that interest them, so 
+              they usually share information for that purpose. However, they typically 
+              want you to ask for permission before sending them marketing email, 
+              or sharing their contact information with partner companies. If 
+              you provide a privacy statement documenting your intended uses, 
+              and give visitors an email address for comments, your visitors will 
+              let you know whether the policy is acceptable.</p>
+            <p> Second, record the data now, even if you do not have a data-mining 
+              process in place. You will find most data-mining tool vendors allow 
+              for an initialization step in which they incorporate historical 
+              data into your data-mining system.</p>
+            <h2> List Your Goals</h2>
+            <p> The great advantage of Web marketing is that you can measure visitor 
+              interactions more effectively than in brick-and-mortar stores or 
+              direct mail. Data mining works best when you have clear, measurable 
+              goals. The following are some goals you might consider:</p>
+            <ul>
+              <li>Increase average page views per session;</li>
+              <li> Increase average profit per checkout;</li>
+              <li> Decrease products returned;</li>
+              <li> Increase number of referred customers;</li>
+              <li> Increase brand awareness;</li>
+              <li> Increase retention rate (such as number of visitors that have 
+                returned within 30 days);</li>
+              <li> Reduce clicks-to-close (average page views to accomplish a 
+                purchase or obtain desired information);</li>
+              <li> Increase conversion rate (checkouts per visit).</li>
+            </ul>
+            <p>If you've instrumented your site to record the visitor, content, 
+              and interaction characteristics, and you've determined a set of 
+              measurable marketing goals, congratulations! You are farther along 
+              than most marketers. Now you can gain value from data mining.</p>
+            <h2> Understand Your Problem</h2>
+            <p> The first step to solving a problem is articulating the problem 
+              clearly. Common problems Web marketers want to solve are how to 
+              target advertisements, personalize Web pages, create Web pages that 
+              show products often bought together, classify articles automatically, 
+              characterize groups of similar visitors, estimate missing data, 
+              and predict future behavior. All involve discovering and leveraging 
+              different kinds of hidden patterns.</p>
+            <p><b>Targeting</b>. Marketers use targeting to select the people 
+              receiving a fixed advertisement, to increase profit, brand recognition, 
+              or other measurable outcome. Targeting on the Web must account for 
+              different advertising ad space costs. Web sites with valuable visitors 
+              typically charge more for ad space.</p>
+            <p> On sites where visitors register, advertisers can target on the 
+              basis of demographics. For example, people living in different parts 
+              of the country or visiting different Web sites may have differing 
+              propensities to purchase sports-team-branded apparel, gay travel 
+              tours, or discount car parts. Therefore, if you target the people 
+              most likely to purchase your product, you can reduce your cost for 
+              an ad campaign and increase the total profit.</p>
+            <p> Some sites let you target ads on the basis of IP address, under 
+              the theory that DNS registration information or surveys provide 
+              the physical location of the IP address. However, because national 
+              dial-up ISPs often share a pool of IP addresses, this is not a reliable 
+              method. As we say in the business, &quot;Half the U.S. population 
+              lives in Vienna, Virginia&quot; (AOL's corporate address).</p>
+            <p> Data mining can help you select the targeting criteria for an 
+              ad campaign. Web publications have a set of variables by which they 
+              can target advertisements. By performing a test ad using &quot;run-of-site&quot; 
+              (that is, untargeted) ad space you can associate demographic variables 
+              with conversion. People &quot;convert&quot; when they accomplish 
+              the marketing goal, such as performing a click-through, purchase, 
+              registration, and so on. Data mining can identify the combination 
+              of criteria that maximizes the profit. For example, data mining 
+              might discover that targeting based on the logical expression</p>
+            <blockquote> <code>(java-consultant) or (software-engineer and purchasing-authority 
+              &lt; 10,000</code></blockquote>
+            <p>will increase the click-through on a JavaBean banner ad.</p>
+            <p> There is a huge variety of data-mining tools that support targeting, 
+              because targeting is extensively used in direct mail marketing.</p>
+            <p><b>Personalization</b>. Marketers use personalization to select 
+              the advertisements to send to a person, to maximize some measurable 
+              outcome. Here we use &quot;advertisement&quot; loosely to refer 
+              to any recommendation or item offered by a site. Even a simple hyperlink 
+              in a menu or an article could be considered an advertisement.</p>
+            <p> Personalization is the converse of targeting. Targeting optimizes 
+              the types of people that will see an advertisement, reducing cost 
+              by showing the advertisement to more people in a broader campaign. 
+              It is most useful for prospecting-finding people who haven't visited 
+              your site yet-because there's a cost to advertising on outside Web 
+              sites. But targeting is pointless on your own site, where advertisements 
+              are free. Why would you not show your products to a person visiting 
+              your own site?</p>
+            <p> In contrast, personalization optimizes the advertisements that 
+              a person sees, raising revenue because the person sees more interesting 
+              stuff. Personalization can be used for external advertising, but 
+              you're more likely to use it on your own site. External sites don't 
+              usually give you enough information about individual visitors to 
+              do good personalization.</p>
+            <p> Some personalization systems, such as Broadvision One-to-One, 
+              rely on the marketer to write rules for tailoring advertisements 
+              to visitors. These are &quot;rules-based personalization systems.&quot; 
+              If you have historical information, you can buy data-mining tools 
+              from a third party to generate the rules. Rules-based personalization 
+              systems are usually deployed in situations where there are limited 
+              products or services offered, such as insurance and financial institutions, 
+              where human marketers can write a small number of rules and walk 
+              away.</p>
+            <p> Other personalization systems, such as Andromedia LikeMinds, emphasize 
+              automatic realtime selection of items to be offered or suggested. 
+              Systems that use the idea that &quot;people like you make good predictors 
+              for what you will do&quot; are called &quot;collaborative filters.&quot; 
+              These systems are usually deployed in situations where there are 
+              many items offered, such as clothing, entertainment, office supplies, 
+              and consumer goods. Human marketers go insane trying to determine 
+              what to offer to whom, when there are thousands of items to offer. 
+              As a result automatic systems are usually more effective in these 
+              environments. Personalizing from large inventories is complex, unintuitive, 
+              and requires processing huge amounts of data.</p>
+            <p><b>Association</b>. Also called market-basket analysis, association 
+              identifies items that are likely to be purchased or viewed in the 
+              same session. If you place references to these items together on 
+              the same page in a Web catalog, you may remind your visitor to purchase 
+              or view something otherwise forgotten. If you hold a promotion on 
+              one item in an association group, you're likely to increase purchases 
+              of other items in that group.</p>
+            <p> Association can be deployed in situations even where you have 
+              static catalog pages. In this case, you rely on the visitor to select 
+              the first catalog page to view, and then serve up related items 
+              as cross-sells. Association is the data-mining solution Amazon uses 
+              when it says, &quot;Customers who bought The Grapes of Wrath also 
+              bought The Great Gatsby.&quot;</p>
+            <p><b>Knowledge Management</b>. These systems seek to identify and 
+              leverage patterns in natural language documents. A more specific 
+              term is &quot;text analysis,&quot; since the vast majority operate 
+              on text. The first step is associating words and context with high-level 
+              concepts. This can be done in a directed way by training a system 
+              with documents that have been tagged by a human with the relevant 
+              concepts. The system then builds a pattern matcher for each concept. 
+              When presented with a new document, the pattern matcher decides 
+              how strongly the document relates to the concept.</p>
+            <p> This approach can be used to sort incoming documents into predefined 
+              categories. Companies use this approach to build automatic site 
+              indices for visitors. News and portal sites use this to reduce the 
+              cost of categorizing and selecting news from syndicators. Some systems 
+              also provide automatic summaries of key points, and cross-reference 
+              documents to related material.</p>
+            <p> Knowledge management systems can be used to personalize online 
+              publications. Imagine a pattern matcher for the &quot;what Dan Greening 
+              likes&quot; concept. This system would find new documents that contain 
+              words and context also contained in articles that I've read before. 
+              Products in this area include Autonomy and HNC SelectResponse.</p>
+            <p> Knowledge management systems can assist in creating automatic 
+              responses to help requests. For example, inbound requests to a customer-support 
+              email address can be categorized, and an automatic response can 
+              be sent from a library of FAQs. Vendors in this area include Kana 
+              and eGain. (See the box &quot;Knowledge Management&quot; in the 
+              November 1999 article &quot;You Asked For It: Solving the Customer 
+              Support Dilemma.&quot;)</p>
+            <p> One of the most interesting applications in this area is Abuzz 
+              Beehive, which creates a &quot;knowledge network&quot; within a 
+              community of experts. If you send a question to Beehive, it first 
+              tries to find a good answer in its archive. If it doesn't have a 
+              good answer, it redirects the question to an expert it thinks can 
+              properly respond. If the expert does respond, it squirrels the response 
+              away in case the question is asked again. In this way, it builds 
+              up a permanent, adapting knowledge base. </p>
+            <p> Abuzz has created something I find both exciting and spooky: a 
+              more informative organism bred from machine and human. Beehive is 
+              a computer broker that brings together human experts with different 
+              specializations. Students of biology will note this parallels important 
+              evolutionary events, such as the aggregation and differentiation 
+              of single-celled organisms into more effective multicelled organisms.</p>
+            <p><b>Clustering</b>. Sometimes called segmentation, clustering identifies 
+              people who share common characteristics, and averages those characteristics 
+              to form a &quot;characteristic vector&quot; or &quot;centroid.&quot; 
+              Clustering systems usually let you specify how many clusters to 
+              identify within a group of profiles, and then try to find the set 
+              of clusters that best represents the most profiles.</p>
+            <p> Clustering is used directly by some vendors to provide reports 
+              on general characteristics of different visitor groups. These techniques 
+              require training, and suffer from drift on Web sites with dynamic 
+              Web pages. (Again, see the article &quot;Tracking Users,&quot; Web 
+              Techniques, July 1999.) </p>
+            <p><b>Estimation and Prediction</b>. Estimation guesses an unknown 
+              value, such as income, when you know other things about a person. 
+              Prediction guesses a future value, such as the probability of buying 
+              a car next year, when a person hasn't done it yet, or the expected 
+              number of stocks that a person will trade in the coming year. The 
+              same algorithms can perform estimation and prediction.</p>
+            <p> Estimation is often used in demographics to fill in the blanks. 
+              If you don't know what income a person has, an estimator can identify 
+              other variables that correlate well with income-such as location, 
+              car preference, job title-then find other people with similar traits 
+              and use them to estimate income and confidence value.</p>
+            <p> Prediction can compute important future attributes of a person-such 
+              as lifetime monetary value, next visit interval, learning speed, 
+              promotion susceptibility, and so on-based on the same approach. 
+              These values can be used in personalization applications.</p>
+            <p> Marketers often aggregate information to understand groups of 
+              customers. Even adding up or averaging past events over different 
+              dimensions-such as visitor category, content category, referrer, 
+              and time-can provide useful information. This simple aggregation 
+              is called OLAP, online analytic processing: online because the marketer 
+              uses an online reporting engine to interactively move through the 
+              data; analytic because the marketer is passively looking through 
+              past data, not trying to change it. </p>
+            <p> Prediction can be applied in combination with OLAP techniques 
+              to generalize properties of groups of people visiting a Web site. 
+              This can help a marketer to slice and dice the data to find which 
+              item attributes or site characteristics appeal to the most valuable 
+              customers.</p>
+            <p><b>Decision Trees</b>. A decision tree is essentially a flow chart 
+              of questions or data points that ultimately leads to a decision. 
+              For example, a car-buying decision tree might start by asking whether 
+              you want a 1999 or 2000 model year car, then ask what type of car, 
+              then ask whether you prefer power or economy, and so on, until it 
+              determines what might be the best car for you. Decision tree systems 
+              try to create optimized paths, ordering the questions so a decision 
+              can be made in the least number of steps.</p>
+            <p> Decision tree systems are incorporated in product-selection systems 
+              offered by many vendors. They're great for situations in which a 
+              visitor comes to a Web site with a particular need. But once the 
+              decision has been made, the answers to the questions contribute 
+              little to targeting or personalization for that visitor in the future. 
+            </p>
+            <p> For example, decision trees are used in the &quot;paper clip&quot; 
+              office assistant in Microsoft Office: It watches what you click 
+              on, and observes your mistakes. It may decide you need help and 
+              bring up a help page with more information. Some of us find the 
+              paper clip helpful. Others wish we could strangle it.*</p>
+            <h2> Picking a Solution</h2>
+            <p> Data mining isn't for the faint of heart. You face three major 
+              problems. First, many good data-mining professionals are serious 
+              nerds who speak the foreign language of statistics. Second, there 
+              are few plug-and-play solutions. And third, everything useful is 
+              expensive.</p>
+            <p> I wrote this article to strengthen your resolve.</p>
+            <p> The previous sections showed you how to determine the data you 
+              should collect, the metrics you hope to improve, and the framework 
+              of the problem. If you know these things, you can communicate more 
+              fluently with data-mining professionals.</p>
+            <p> Use caution when listening to traditional offline data-mining 
+              professionals. It's likely that your Web site operates at a faster 
+              rate, involves more data, and is more mission critical than anything 
+              they've done. Traditionalists are familiar with a more relaxed world: 
+              where data mining is used once per month, rather than once per click; 
+              where data accumulates in gigabytes per year rather than gigabytes 
+              per month; and where a crashed application needs to be fixed in 
+              the morning, rather than instantly by redundant machines and fail-safe 
+              rollover.</p>
+            <p> Data-mining algorithms overlap in the problems they can solve, 
+              but for a given problem there's usually a &quot;best algorithm.&quot; 
+              When you buy a product, make sure the algorithm it uses is appropriate 
+              for the task you're trying to perform. The box titled &quot;Picks, 
+              Pans, &amp; Dynamite&quot; discusses the most common data-mining 
+              techniques used on the Web.</p>
+            <p> Though data-mining applications are expensive, everything is relative. 
+              Andromedia's LikeMinds personalization system increased average 
+              spend rate on the Levi-Strauss online store by 33 percent and increased 
+              repeat visitation by 225 percent. This adds up to a lot of revenue.</p>
+            <p> The world of Web data mining is simultaneously a minefield and 
+              a gold mine. By saving data associated with visitors, content, and 
+              interactions, you can at least ensure you'll be able use it later. 
+              Despite the difficulties, you might consider evaluating and incorporating 
+              data-mining applications now. The sooner you start learning from 
+              your data, the sooner you can leave your competitors in the dust. 
+            </p>
+            <p><em>Dan holds a Ph.D. in computer science from UCLA, emphasizing 
+              parallel statistical optimization. He is currently chief technology 
+              officer at Andromedia. He can be reached at <a href="mailto:dan-at-greening.name">dan&#064;greening.name</a> .</em></p>
+            <p>* Editor's Note: No office supplies were harmed in the process 
+              of writing this article.</p>
+            <p></p>
+            <h1>Mining Camps</h1>
+            <h3> Data-Mining Vendors</h3>
+            <p>Many vendors include data mining in their Web products. This list 
+              offers some representative vendors in different fields.</p>
+            <h4>Abuzz</h4>
+            <a href="http://www.abuzz.com/">www.abuzz.com </a> 
+            <p> Creates a multihuman knowledge network for answering complex questions. 
+              Uses neural networks. (For explanations of terms, see the box titled 
+              &quot;Picks, Pans, &amp; Dynamite.&quot;)</p>
+            <h4><b>Andromedia</b></h4>
+            <a href="http://www.andromedia.com/">www.andromedia.com</a> 
+            <p> Realtime personalization based on click-stream, preference profiles, 
+              purchase history, and demographics (LikeMinds). Uses collaborative 
+              filtering. Ties in with realtime Web marketing analysis and reporting 
+              system (Aria).</p>
+            <h4><b>Autonomy</b></h4>
+            <a href="http://www.autonomy.com/">www.autonomy.com </a> 
+            <p> Knowledge management for categorization and text-portal personalization. 
+              Uses neural networks.</p>
+            <h4><b>DataSage</b></h4>
+            <a href="http://www.datasage.com/">www.datasage.com </a> 
+            <p> Hybrid prediction/OLAP system reports on visitor and item characteristics 
+              associated with predicted market value. Uses clustering and neural 
+              networks.</p>
+            <h4><b>eGain</b></h4>
+            <a href="http://www.egain.com/">www.egain.com </a> 
+            <p> Knowledge management system for email customer support. Uses neural 
+              networks.</p>
+            <h4><b>HNC</b></h4>
+            <a href="http://www.hncs.com/">www.hncs.com </a> 
+            <p> Targeting system for advertisements (SelectCast). Knowledge management 
+              system for email customer service (SelectResponse). Uses neural 
+              networks.</p>
+            <h4><b>Kana</b></h4>
+            <a href="http://www.kana.com/">www.kana.com </a> 
+            <p> Knowledge management system for email customer support. Uses neural 
+              networks.</p>
+            <h4><b>Personalogic</b></h4>
+            <a href="http://www.personalogic.com/">www.personalogic.com </a> 
+            <p> Decision tree system for selecting products by desired features. 
+              Uses Bayesian networks.</p>
+            <h4><b>Personify</b></h4>
+            <a href="http://www.personify.com/">www.personify.com </a> 
+            <p> Clustering system lets sites analyze general characteristics of 
+              groups of visitors.</p>
+            <h4><b>SAS</b></h4>
+            <a href="http://www.sas.com/software/">www.sas.com/software </a> 
+            <p> Provides traditional (non-realtime) data-mining tools that must 
+              be assembled for a particular application. Uses clustering, neural 
+              networks. -DG</p>
+            <h1> Picks, Pans, &amp; Dynamite</h1>
+            <h3>Data-Mining Algorithms </h3>
+            <p>The data-mining algorithms used on the Web fall into several general 
+              categories.</p>
+            <p>Neural networks work something like your brain. When patterns are 
+              presented to you, your brain eventually figures out that certain 
+              patterns are associated with other desired outcomes. This can be 
+              applied to targeting, estimation, prediction, and knowledge management. 
+              Neural networks must be trained, sometimes taking hours of CPU time. 
+              They don't adapt to new patterns until trained again, and they need 
+              to be carefully tuned by a human.</p>
+            <p>Collaborative filters organize profile data by person, then use 
+              this logic: People who have done things you have done are good predictors 
+              for what you will do. In a sense, they are a restricted type of 
+              neural network, with the input data in a regular form. This restriction 
+              gives collaborative filters three great advantages: They adapt rapidly 
+              to new behavior patterns. They can predict for thousands of data 
+              points simultaneously. And they don't need to be tuned. This makes 
+              collaborative filters ideal for realtime personalization applications.</p>
+            <p>Bayesian networks build a directed graph of conditional probabilities. 
+              As a visitor provides more information about himself or herself, 
+              a Bayesian network adjusts the probabilities of each possible end 
+              result. This allows a Web system to accelerate the visitor's experience 
+              by bringing the most likely things to the visitor's attention as 
+              soon as possible. Bayesian networks are most appropriate to help 
+              satisfy short-term visitor goals, such as answering customer support 
+              questions, diagnosing problems, or selecting an appliance. However, 
+              training a Bayesian network is often extremely slow. -DG</p>
+            <!-- #EndEditable --></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+<!-- #EndTemplate --></html>

@@ -7,8 +7,8 @@
   <groupId>org.greening</groupId>
   <artifactId>greening</artifactId>
   <packaging>war</packaging>
+  <name>Dan Greening Personal Site</name>
   <version>1.0-SNAPSHOT</version>
-  <name>Dan Greening web site</name>
   <url>http://greening.org</url>
   <scm>
   	<connection>scm:git:file:///Users/greening/git/greening-org</connection>

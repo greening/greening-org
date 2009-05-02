@@ -117,7 +117,7 @@ li {
 <table border="0" align="center" cellpadding="0" cellspacing="0">
   <tr valign="middle">
     <td align="left"><!-- TemplateBeginIf cond="Home" -->
-      <h3><a href="/">Dan&nbsp;Greening&nbsp;Home</a> </h3>
+      <h3><a href="../">Dan&nbsp;Greening&nbsp;Home</a> </h3>
     <!-- TemplateEndIf --></td>
     <td width="16" align="center">&nbsp;</td>
     <td width="460" align="center"> 
@@ -126,15 +126,15 @@ li {
     <!-- TemplateEndEditable --></td>
   </tr>
   <tr>
-    <td width="23%" valign="top"> <h3><a href="/why.htm">Why?</a></h3>
+    <td width="23%" valign="top"> <h3><a href="../why.htm">Why?</a></h3>
       <h3><a href="../profession.htm">Profession</a></h3>
-      <h3><a href="/publications.htm">Publications</a></h3>
+      <h3><a href="../publications.htm">Publications</a></h3>
       <h3>Trips</h3>      
       <h3>Presentations</h3>
       <h3>Poetry</h3>
       <h3>Photo&nbsp;Gallery</h3>
 	  <h3>Favorites</h3>
-	  <h3><a href="/contact.htm">Contact</a></h3></td>
+	  <h3><a href="../contact.htm">Contact</a></h3></td>
     <td width="16" valign="top">&nbsp;</td>
     <td width="460" valign="top"><div class="body"><!-- TemplateBeginEditable name="Main" -->
     <div align="center"> <img src="../images/homehead21.jpg" alt="Dan R. Greening" width="200" height="200" /></div>

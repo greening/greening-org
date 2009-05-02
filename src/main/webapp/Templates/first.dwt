@@ -9,7 +9,7 @@
 <!-- TemplateBeginIfClause cond="!Home" --><title>Greening: Home</title> <!-- TemplateEndIfClause -->
 <!-- TemplateEndMultipleIf -->
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<link href="/Templates/greening.css" rel="stylesheet" type="text/css" />
+<link href="Templates/greening.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -41,14 +41,14 @@
     most of my time to my new company, and a professional-looking personal web
     site is not top priority. Consistency is the hob-knob of little minds</p>
 <!-- TemplateEndEditable --></div>
-<!-- TemplateBeginIf cond="Home" --><div id="navhome"><p><a href="/">Dan&nbsp;Greening&nbsp;Home</a></p></div>
+<!-- TemplateBeginIf cond="Home" --><div id="navhome"><p><a href="..">Dan&nbsp;Greening&nbsp;Home</a></p></div>
 <!-- TemplateEndIf --><div id="nav">
-  <p><a href="/profession.htm">Profession</a></p>
-  <p><a href="/publications.htm">Publications</a></p>
-  <p><a href="/why.htm">Why?</a></p>
-  <p><a href="/contact.htm">Contact</a></p>
-  <p><a href="/thawte.htm">X.509 Certs</a></p>
-  <p><a href="/colophon.htm">Colophon</a></p>
+  <p><a href="../profession.htm">Profession</a></p>
+  <p><a href="../publications.htm">Publications</a></p>
+  <p><a href="../why.htm">Why?</a></p>
+  <p><a href="../contact.htm">Contact</a></p>
+  <p><a href="../thawte.htm">X.509 Certs</a></p>
+  <p><a href="../colophon.htm">Colophon</a></p>
 </div>
 </body>
 </html>

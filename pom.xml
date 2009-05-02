@@ -12,7 +12,7 @@
   <url>http://greening.org</url>
   <scm>
   	<connection>scm:git:file:///Users/greening/git/greening-org</connection>
-  	<url>http://greening.4java.ca/git/greening.org</url>
+  	<url>http://luminum.greening.org/git/greening.org</url>
   </scm>
   <build>
   	<defaultGoal>war</defaultGoal>
@@ -32,17 +32,6 @@
           <server>manager</server>
         </configuration>
       </plugin>
-    <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-scm-plugin</artifactId>
-      <dependencies>
-        <dependency>
-          <groupId>org.apache.maven.scm</groupId>
-          <artifactId>maven-scm-provider-gitexe</artifactId>
-          <version>1.2</version>
-        </dependency>
-      </dependencies>
-    </plugin>
     </plugins>
   </build>
   <pluginRepositories>

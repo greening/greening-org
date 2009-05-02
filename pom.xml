@@ -5,14 +5,14 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.greening</groupId>
-  <artifactId>greening</artifactId>
+  <artifactId>dan</artifactId>
   <packaging>war</packaging>
   <name>Dan Greening Personal Site</name>
   <version>1.0-SNAPSHOT</version>
-  <url>http://greening.org</url>
+  <url>http://dan.greening.org</url>
   <scm>
-  	<connection>scm:git:file:///Users/greening/git/greening.org</connection>
-  	<url>http://luminum.greening.org/git/greening.org</url>
+  	<connection>scm:git:file:///Users/greening/git/dan.greening.org</connection>
+  	<url>http://luminum.greening.org/git/dan.greening.org</url>
   </scm>
   <build>
   	<defaultGoal>war</defaultGoal>

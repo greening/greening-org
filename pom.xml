@@ -11,7 +11,7 @@
   <version>1.0-SNAPSHOT</version>
   <url>http://greening.org</url>
   <scm>
-  	<connection>scm:git:file:///Users/greening/git/greening-org</connection>
+  	<connection>scm:git:file:///Users/greening/git/greening.org</connection>
   	<url>http://luminum.greening.org/git/greening.org</url>
   </scm>
   <build>

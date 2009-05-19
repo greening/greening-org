@@ -1,20 +1,30 @@
 BEGIN:VCARD
-VERSION:2.1
-N:Greening;Dan;R.
+VERSION:3.0
+N:Greening;Dan;R.;;
 FN:Dan R. Greening
-ORG:BigTribe Corporation
-TITLE:President and CEO
-NOTE;ENCODING=QUOTED-PRINTABLE:  =0D=0A=0D=0A
-TEL;WORK;VOICE:+1 (415) 995-7150 x101
-TEL;HOME;VOICE:+1 (415) 331-3687
-TEL;CELL;VOICE:+1 (415) 810-3693
-TEL;WORK;FAX:+1 (415) 995-7155
-TEL;HOME;FAX:+1 (415) 480-2014
-ADR;WORK:;;330 Townsend Street, Suite 209;San Francisco;CA;94107-1662;USA
-LABEL;WORK;ENCODING=QUOTED-PRINTABLE:330 Townsend Street, Suite 209=0D=0ASan Francisco, CA 94107-1662=0D=0AUSA
-ADR;HOME:;;416 Bee St Apt B;Sausalito;CA;94965;USA
-LABEL;HOME;ENCODING=QUOTED-PRINTABLE:416 Bee St Apt B=0D=0ASausalito, CA 94965-2315=0D=0AUSA
-URL;WORK:http://dan.greening.name/
-EMAIL;PREF;INTERNET:dan@greening.name
-REV:20021227T174648Z
+NICKNAME:Dan
+ORG:Citrix Online;
+TITLE:Enterprise ScrumMaster
+item1.EMAIL;type=INTERNET;type=pref:dan.greening@citrix.com
+item1.X-ABLabel:_$!<Other>!$_
+EMAIL;type=INTERNET;type=HOME:dan@greening.org
+TEL;type=WORK:+1 (415) 331-3687
+TEL;type=WORK:+1 (415) 489-4212
+TEL;type=CELL:+1 (415) 810-3693
+TEL;type=HOME;type=pref:+1 (415) 331-3687
+TEL;type=HOME;type=FAX:+1 (415) 480-2014
+TEL;type=WORK;type=FAX:+1 (415) 489-4205
+TEL;type=MAIN:(805) 690-6400
+item4.ADR;type=WORK:;;650 Townsend St Ste 275;San Francisco;CA;94103-6228;US
+item4.X-ABADR:us
+item5.ADR;type=HOME;type=pref:;;89 Crescent Ave;Sausalito;CA;94965-2315;US
+item5.X-ABADR:us
+URL;type=HOME;type=pref:http\://dan.greening.org/
+URL;type=WORK:http\://www.citrixonline.com/
+BDAY;value=date:2003-01-08
+X-AIM;type=HOME;type=pref:danrgreening@aol.com
+item6.X-ABRELATEDNAMES;type=pref:Ron Lussier
+item6.X-ABLabel:_$!<Spouse>!$_
+CATEGORIES:Group Name,phone
+X-ABUID:222173F7-39F3-4414-93B4-5EBA06113FF6\:ABPerson
 END:VCARD

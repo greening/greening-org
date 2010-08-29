@@ -7,7 +7,7 @@
 	<artifactId>greening-org</artifactId>
 	<packaging>war</packaging>
 	<name>Dan Greening Personal Site</name>
-	<version>8</version>
+	<version>13</version> <!-- Version passed to Google Appengine -->
 	<url>http://dan.greening.org</url>
 	<properties>
 		<scala.version>2.7.4</scala.version>
@@ -38,74 +38,84 @@
 			<id>codehaus</id>
 			<url>http://repository.codehaus.org/org/codehaus/mojo/</url>
 		</pluginRepository>
+		<pluginRepository>
+			<id>maven-gae-plugin-repo</id>
+			<name>Maven Google App Engine Repository</name>
+			<url>http://maven-gae-plugin.googlecode.com/svn/repository/</url>
+		</pluginRepository>
 	</pluginRepositories>
 	<dependencies>
+		<!--  bundle with app -->
+		<dependency>
+			<groupId>com.google.appengine</groupId>
+			<artifactId>appengine-api</artifactId>
+			<version>1.0-sdk-1.2.0</version>
+		</dependency>
 		<!-- For Google App Engine -->
-		        <!--unit test related dependencies-->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
-        </dependency>
+		<!--unit test related dependencies-->
 		<dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-api-stubs</artifactId>
-            <version>1.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-local-runtime</artifactId>
-            <version>1.0</version>
-            <scope>test</scope>
-        </dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!--  provided items -->
 		<dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-tools-api</artifactId>
-            <version>1.0</version>
-            <scope>test</scope>
-        </dependency>
-        <!--app engine related dependencies-->
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>appengine-api</artifactId>
-            <version>1.0-sdk-1.2.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>geronimo-jta</artifactId>
-            <version>1.1_spec-1.1.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>jdo2-api</artifactId>
-            <version>2.3-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>geronimo-jpa</artifactId>
-            <version>3.0_spec-1.1.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>datanucleus-appengine</artifactId>
-            <version>1.0.0.final</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>datanucleus-core</artifactId>
-            <version>1.1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.appengine</groupId>
-            <artifactId>datanucleus-jpa</artifactId>
-            <version>1.1.0</version>
-        </dependency>
+			<groupId>com.google.appengine</groupId>
+			<artifactId>appengine-api-stubs</artifactId>
+			<version>1.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.appengine</groupId>
+			<artifactId>appengine-local-runtime</artifactId>
+			<version>1.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.appengine</groupId>
+			<artifactId>appengine-tools-api</artifactId>
+			<version>1.0</version>
+			<scope>test</scope>
+		</dependency>
+		<!--app engine related dependencies-->
+		<dependency>
+			<groupId>com.google.appengine</groupId>
+			<artifactId>geronimo-jta</artifactId>
+			<version>1.1_spec-1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.jdo</groupId>
+			<artifactId>jdo2-api</artifactId>
+			<version>2.3-20090302111651</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.appengine</groupId>
+			<artifactId>geronimo-jpa</artifactId>
+			<version>3.0_spec-1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.appengine</groupId>
+			<artifactId>datanucleus-appengine</artifactId>
+			<version>1.0.0.final</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.appengine</groupId>
+			<artifactId>datanucleus-core</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.appengine</groupId>
+			<artifactId>datanucleus-jpa</artifactId>
+			<version>1.1.0</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<defaultGoal>war</defaultGoal>
 		<finalName>ROOT</finalName>
+		<resources>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -136,14 +146,36 @@
 				<configuration>
 					<contextPath>/</contextPath>
 					<scanIntervalSeconds>5</scanIntervalSeconds>
-       				  <systemProperties>
-            <systemProperty>
-              <name>run.mode</name>
-               <value>development</value>
-            </systemProperty>
-         </systemProperties>
+					<systemProperties>
+						<systemProperty>
+							<name>run.mode</name>
+							<value>development</value>
+						</systemProperty>
+					</systemProperties>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.0.2</version>
+				<configuration>
+					<filteringDeploymentDescriptors>true</filteringDeploymentDescriptors>
+					<webResources>
+						<resource>
+							<!-- this is relative to the pom.xml directory -->
+							<directory>src/main/filtered</directory>
+							<filtering>true</filtering>
+						</resource>
+					</webResources>
+				</configuration>
+			</plugin><!-- 
+			<plugin>
+				<groupId>net.kindleit</groupId>
+				<artifactId>maven-gae-plugin</artifactId>
+				<configuration>
+					<sdkDir>/usr/local/google_appengine</sdkDir>
+				</configuration>
+			</plugin>  -->
 		</plugins>
 	</build>
 </project>

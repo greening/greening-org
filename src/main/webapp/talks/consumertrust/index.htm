@@ -1,0 +1,552 @@
+<html>
+
+<head>
+<title>LikeMinds Pref. Server White Paper</title>
+<meta name="Microsoft Border" content="none, default">
+</head>
+
+<body>
+<basefont face="Verdana, Arial, Helvetica">
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td></td>
+    <td width="190" align="right" valign="top"><a href="http://www.likeminds.com/" target="_top"><img src="lmlogo_168_50.gif" alt="LikeMinds Home" border="0" WIDTH="168" HEIGHT="50"></a> </td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF" width="100%" height="2"></td>
+  </tr>
+</table>
+
+<blockquote>
+  <p align="center"><img src="lmlogo_med.gif" alt="LikeMinds logo" WIDTH="70" HEIGHT="73"> </p>
+  <h2 class="colored" align="center">Building Consumer Trust<br>
+  with Accurate Product Recommendations</h2>
+  <h3 class="colored" align="center">A White Paper on LikeMinds WebSell 2.1</h3>
+  <p align="center"><a href="../../../index.htm">Dan R. Greening, Ph.D.</a><br>
+  Chief Technical Officer, LikeMinds, Inc.<br>
+  <a href="mailto:dan-at-greening.org">dan@greening.org</a><br>
+  (415) 284-6966 </p>
+  <p align="center">LMWSWP-210-102297 </p>
+  <p><br>
+  </p>
+  <h3 class="colored">Introduction</h3>
+  <blockquote>
+    <p>LikeMinds WebSell is a web-based system that accumulates a database of consumer product
+    preferences, then uses those preferences to make highly specific customer recommendations
+    for products such as movies, music, articles, books, food, etc. </p>
+    <p>By finding other people with similar tastes, the system can recommend the most
+    appealing new products to a user with surprising accuracy. Users can search for a specific
+    product, then obtain a predicted rating. WebSell can find 'products for two or more' which
+    satisfy the tastes of multiple users. And, it can find 'worst products,' which in the case
+    of movies, travel, or CDs can be a hilarious diversion. </p>
+    <p>Users of the LikeMinds Preference Server typically find it addictive and fun.
+    Incorporating the LikeMinds Preference Server can substantially increase the traffic at a
+    web site, and increase customer loyalty to the site by making trustworthy recommendations.
+    Typical Preference Server users average about 50 page views per visit, rate 80 products
+    per visit, receive an average of 40 product recommendations per visit, and exhibit a
+    multi-day repeat rate of greater than 90%. </p>
+    <p>Using LikeMinds WebSell on retail sales, rental or promotional web sites can increase
+    customer satisfaction substantially. WebSell usually makes much better product
+    recommendations than a close friend would make. Customers learn to trust the system, and
+    by extension learn to trust the web site brand. This strong level of trust brings
+    customers back again and again. </p>
+    <p>LikeMinds has invested substantial resources to make LikeMinds WebSell extremely
+    accurate. Patents 4,870,579 and 4,996,642, issued in 1989 and 1991 -- before web activity
+    became widespread -- cover the algorithms used in Web Sell and other LikeMinds products.
+    These patents cover the most accurate forms of 'collaborative filtering,' essentially all
+    algorithms which compare the ratings of two or more users and assign a weight based on
+    similarity. We continue to refine the algorithms through ongoing development and testing. </p>
+    <h4 class="colored">Movie Critic Demonstration Site</h4>
+    <p>LikeMinds has built a WebSell demonstration web site called &quot;Movie Critic.&quot;
+    This system is available at <a href="http://www.moviecritic.com/">http://www.moviecritic.com/<img border="0" src="leavesite.gif" alt="This link leaves the LikeMinds site" WIDTH="19" HEIGHT="8"></a>. Movie
+    Critic asks users to rate 12 movies, then recommends additional movies a user will like.
+    The more movies a user rates, the better the recommendations as the system refines its
+    understanding of a user's tastes and preferences. </p>
+    <p>Movie Critic can limit recommendations to specific product categories called 'genres'.
+    Users can obtain recommendations for movies available in video rental stores, or for
+    movies showing in theaters. For instance a WebSell application built for a video web site
+    with retail storefronts could use this feature to limit recommendations by subject, year,
+    or whether a particular movie was in stock. </p>
+    <p>Another feature of WebSell that is used in Movie Critic is the ability to create
+    'composite users' from two or more people. This allows Movie Critic to make
+    recommendations that will satisfy everyone in a family or a couple. Movie Critic
+    demonstrates this by providing 'Movies for Two' recommendations -- movies that both you
+    and a friend will like. You choose another Movie Critic member by typing their user-id.
+    Movie Critic then intersects your rating vector with your friend's to form a composite
+    user, and computes recommendations from that. </p>
+    <p>Internally, Movie Critic first generates predicted ratings, then provides
+    recommendations. Applications built with WebSell can use this information directly. For
+    example, Movie Critic lets you skip the recommendation step to obtain your predicted
+    rating of any movie. If your friends want you to go to a movie, you can search Movie
+    Critic for the movie and get your predicted rating. </p>
+    <p>Using predicted ratings, Movie Critic can even recommend 'Worst Bets,' the movies you
+    will like the least. Although this does not drive most viewing decisions, it can be
+    hilarious. People who might watch <em>Mystery Science Theater 3000</em>, a popular
+    television program which spoofs bad science fiction movies, appreciate this feature and do
+    use it to suggest rental movies. </p>
+    <p>Movie Critic computes its confidence in each predicted rating. The confidence level
+    combines the strength of the recommendation (how similar are you and your mentors) and the
+    dissent among your mentors (how controversial is a product among your peer group). Movie
+    Critic provides this information in the form of a bulls-eye. When a confidence arrow hits
+    the center of the bulls-eye, Movie Critic is sure of its prediction. When it misses the
+    center, the Movie Critic is less confident. 'Not confident' predictions also indicate
+    movie ratings that will help narrow down your preferences. </p>
+    <p>Users of Movie Critic typically find it addictive and fun. User surveys from LikeMinds
+    Movie Critic site prove that incorporating WebSell into your web site can substantially
+    grow traffic, and increase customer loyalty by making trustworthy recommendations. For
+    example, typical Movie Critic users rate 80 products, average 50 page views while
+    receiving 40 product recommendations per visit, and exhibit a multi-day repeat rate of
+    greater than 75%. </p>
+  </blockquote>
+  <h3 class="colored">The Principles behind WebSell</h3>
+  <blockquote>
+    <p>WebSell has three main functions: First, find out more about a user's product
+    preferences. Second, identify products the user is likely to want. Third, make product
+    recommendations to the user. </p>
+    <h4 class="colored">People Use Objective and Subjective Factors</h4>
+    <p>A product can be anything on which people express differing opinions. Products include:
+    <ul>
+      <li>retail items, such as music CDs, video tapes, toys, books, or automobiles, </li>
+      <li>experiences, such as travel locations, concerts, or sports events, </li>
+      <li>consumables, such as articles, music or video clips, </li>
+      <li>people, as might be expressed in a dating service or teleconference, </li>
+      <li>job listings, and </li>
+      <li>advertisements (both banner ads and classifieds). </li>
+    </ul>
+    <p>We make decisions on products using objective and subjective factors. Objective factors
+    depend solely on the product: Who is the author of a book? What is the native language of
+    a travel destination? How is this music clip classified? How tall is a potential date? How
+    much does a job pay? </p>
+    <p>Subjective factors depend on us: Do we like the prose style of a book? Will I have fun
+    in a travel destination? Is the music good? Is a potential date cute? Will I like the
+    boss? </p>
+    <p>Typical classification systems can help us objectively assess products, but to
+    subjectively assess products we rely on personal relationships: Did a salesperson who
+    understands what I'm looking for recommend the book? Did a person like me recommend a
+    vacation spot? Did a reviewer I respect enjoy the musician? Do I like the employer's
+    product advertisements? </p>
+    <h4 class="colored">Product Preferences Drive Marketing</h4>
+    <p>WebSell improves subjective decisions by using a database of user preferences to inform
+    product recommendations. </p>
+    <p>Product preferences are the most accurate way to identify what people like. This is an
+    obvious tautology, but consider that vast industries have been formed around surrogates
+    for product preferences. </p>
+    <p>Demographic analysis is one surrogate. Demographic analysis surveys individuals to get
+    product preferences and 'objective' factors, such as age, income, home address, and
+    marital status. Then it classifies the audience by objective factors to infer product
+    preferences. </p>
+    <p>For example, in creating a campaign for a new Madonna movie, we look at customer
+    demographics -- 19 to 24 year old unmarried women pay to attend Madonna movies. And we
+    look at media demographics -- the <em>Beverly Hills 90210</em> television show has a large
+    audience of 19 to 24 year old unmarried women. The combination tells us we should
+    advertise our new Madonna movie on <em>Beverly Hills 90210</em>. </p>
+    <p>Psychographic analysis is another surrogate. Psychographic analysis surveys individuals
+    to get product preferences and to get answers to psychological questions. The
+    psychological questions classify the individual and help determine appealing products and
+    advertisements. </p>
+    <p>For example, a 'gatekeeper mom' answers psychological questions in ways that indicate
+    she tries to control her child's environment. Gatekeeper moms are more likely to respond
+    to advertisements that show a loving mother giving a child an apple. </p>
+    <p>These generalizations provide approximations to true consumer preference groups. To the
+    extent that an approximation fails to represent true individual preferences, we waste
+    marketing dollars targeting people who won't buy the product. </p>
+    <h4 class="colored">Trust Builds Strong Brands</h4>
+    <p>WebSell leverages a simple principle: Consumer preferences are not random -- people who
+    express the same taste in products can recommend products to each other. People use this
+    principle to make decisions without using computers. When we find someone else who likes
+    the same music, sports or cars, we talk about favorite products to help inform our own
+    future purchases. </p>
+    <p>Brand trust helps improve decision-making efficiency, in a similar way. We learn that a
+    brand is associated with products we like, and we then begin to trust that brand. </p>
+  </blockquote>
+  <h3 class="colored">How WebSell Works</h3>
+  <blockquote>
+    <p>WebSell is based on the LikeMinds Preference Server module of the LikeMinds product
+    architecture. Preference Server creates a preference database to make product
+    recommendations better than friends or salespeople can. Here's a simplified description of
+    how it works: </p>
+    <p>You (a consumer) express your taste in a set of products. You can do this implicitly by
+    viewing web pages (we count clicks or clock viewing time) or explicitly by selecting and
+    rating products. In either case, we call the result a 'rating vector.' The Preference
+    Server assembles the rating vectors of thousands or millions of other people in its
+    database. </p>
+    <p>The Preference Server then identifies those people most like you. We call people like
+    you 'mentors.' The Preference Server assigns a numeric weight to each mentor based on the
+    similarity of his or her rating vector to yours. The more the mentor's rating values
+    resemble yours and the more products both of you have rated, the greater the weight. </p>
+    <p>The Preference Server assembles a set of recommendations by finding the products each
+    mentor recommends and creating a 'prediction vector' containing the predicted rating of
+    each product. With each predicted rating, it also stores a numeric 'confidence' for the
+    rating. </p>
+    <p>The Preference Server recommends products to you by sorting the list of products, then
+    presenting those products you are most likely to want. </p>
+  </blockquote>
+  <h3 class="colored">Preference Server is Accurate</h3>
+  <blockquote>
+    <p>The general algorithm used in the Preference Server is detailed in U.S. Patents
+    4,996,642 and 4,870,579. </p>
+    <p>The basics follow: For any user selected from a group, the system recommends items,
+    such as movies, sampled by one or more users in the group, but not sampled by the selected
+    user. </p>
+    <p>The system first identifies a user. Movie Critic does this when the user logs into the
+    web site. </p>
+    <p>The system records a scalar 'rating' for each item sampled by the selected user to
+    represent the user's reaction to that item. Movie Critic does this whenever a user rates a
+    movie. The set of ratings for a user is called the 'rating vector.' </p>
+    <p>The system pairs the selected user with a random collection of others who have sampled
+    some items that the selected user also sampled. The system computes a scalar 'agreement
+    strength' for each user pair, using the difference in ratings for items sampled by both,
+    and the number of items sampled by both. </p>
+    <p>The system designates some of the other users as recommending users or 'mentors.'
+    Mentors are users who have stronger agreement, recommend more items, or improve the item
+    coverage of the mentor set. </p>
+    <p>Preference Server performs these computations with random user pairs in a background
+    process called the 'background recommender,' and with cached users in the 'immediate
+    recommender.' </p>
+    <p>When a user requests a recommendation or a predicted rating, the system fetches mentors
+    and their rating vectors. The system then assembles a 'prediction vector' which for each
+    item contains the predicted rating of the item, the 'confidence' of the prediction, and
+    the controversy associated with the prediction. </p>
+    <p>The system then identifies items to recommend to the user. Recommendations can be
+    determined by a combination of the best predicted rating, best confidence, lowest
+    controversy, and availability of the item in the inventory. </p>
+    <h4 class="colored">Example</h4>
+    <p>To illustrate the calculations, we will walk through a simple movie example. The
+    functions described in this section are not exactly those used in WebSell or Movie Critic,
+    but they are close enough that the algorithm is clear. </p>
+    <p><img src="figure1.gif" align="right" hspace="10" vspace="10" border="0" alt="Figure 1: Example Ratings" WIDTH="290" HEIGHT="278"> </p>
+    <p>Figure 1 show a set of example movie ratings entered by users Smith, Jones, and Wesson.
+    In this example, ratings vary from 13 (best) to 1 (worst). All three users have rated <em>Star
+    Wars</em> and <em>The Untouchables</em>. Smith has not seen <em>Beverly Hills Cop</em>,
+    and Jones has seen neither <em>Fletch</em> nor <em>Caddyshack</em>. </p>
+    <p>To compute the agreement of Smith and Jones, we first find the differences in common
+    ratings. Smith and Jones have sampled two items in common -- <em>Star Wars</em> and <em>The
+    Untouchables</em> -- having rating differences of 3 and 1, respectively. <br clear="all">
+    </p>
+    <p><img src="table1.gif" align="left" hspace="10" vspace="10" border="0" alt="Table 1: Example Closeness Function" WIDTH="187" HEIGHT="398"> </p>
+    <p>To obtain the agreement strength, we first compute a closeness function of each pair of
+    ratings. Table 1 shows an example closeness function. If the two ratings are exactly the
+    same, the closeness function returns 10. If the two ratings differ by 10, the closeness
+    function returns -8, etc. For our example the closeness function values are 4 and 9,
+    respectively. </p>
+    <p>We compute the agreement scalar for a user pair with the following equation: </p>
+    <blockquote>
+      <code>AS = (CVT/n)log<sub>2</sub>n</code> &nbsp;&nbsp;&nbsp;(<em>equation 1</em>)
+    </blockquote>
+    <p>where <code>AS</code> is the agreement scalar, <code>CVT</code> is the sum of the
+    closeness-values, and <code>n</code> is the count of items sampled by both users. <br clear="all">
+    <img src="figure2.gif" align="right" hspace="10" vspace="10" border="0" alt="Figure 2: Mentor weights" WIDTH="275" HEIGHT="217"> </p>
+    <p>By application of equation 1, CVT is 13 and the agreement scalar for Smith and Jones is
+    6.5. Similarly, CVT for the pair of Smith and Wesson is 17 and the agreement scalar is
+    8.50. CVT for Jones and Wesson is 20, and the agreement scalar is 10.6. </p>
+    <p>The difference in reaction of Smith and Jones to <em>The Untouchables</em>, and the
+    small number of items held in common led to the smaller agreement scalar between those
+    users. The greater the number of items that the users have sampled, the more accurate the
+    agreement scalar should be for each of the users with which the selected user is paired. </p>
+    <p>The mentors are ranked by order of agreement scalar. In one version of the algorithm,
+    predictions from the higher weight mentor supercede predictions from all lower weight
+    mentors. In another version of the algorithm, competing predictions from different mentors
+    are summed proportionally to their relative weight. <br clear="all">
+    </p>
+    <p align="center"><img src="figure3.gif" hspace="10" vspace="10" WIDTH="500" HEIGHT="218"> </p>
+    <p>The predictions themselves are not simply copied from the mentor's rating vector. A
+    mentor's ratings are scaled to fit the selected user's range of ratings. This is done to
+    allow mild reviewers to mentor extremists, and visa-versa. Assembling these scaled
+    predictions from all the mentors creates a prediction vector, as illustrated in Figure 3. </p>
+    <p>With the prediction vector filled in, the system obtains an item recommendation by
+    sorting the items by their predicted rating. The system will recommend <em>Caddyshack</em>,
+    with a predicted rating of 11, to Jones. It will recommend <em>Beverly Hills Cop</em>,
+    with a predicted rating of 9, to Smith. </p>
+    <p>Alternatively, the predictions can be sorted in least appealing order, to get a 'Worst
+    Bets' list, as provided in MovieCritic. Or a user can look up the predicted rating for an
+    item. </p>
+    <p>The terms 'person' and 'user' can be used in the broadest sense to refer to any entity
+    which exhibits a subjective reaction to an item. The Preference Server applies to more
+    than movies, record albums, computer games, television programs, or other consumer items.
+    For example, reactions can be predicted for travel destinations, hotels, or restaurants.
+    Further, predictions among categories can be accomplished, e.g., recommending books based
+    on the ratings of movies. </p>
+    <p>Through its database interface, WebSell can interact with an inventory management
+    system or maintain an inventory status itself, when inventory is limited. On a video store
+    web site, for example, certain movies may not be carried by that store or, even if the
+    items are stocked they may be unavailable. In these circumstances WebSell can recommend
+    only those items which are available. It can also recommend only specially designated
+    items (such as items on sale, or those within a particular genre). </p>
+    <h4 class="colored">WebSell Accuracy Metrics</h4>
+    <p>Since WebSell is a key factor in web site brand development, it must provide accurate
+    predictions. Good accuracy metrics help objectively judge prediction algorithms and
+    parameter settings. </p>
+    <p>Because WebSell predicts ratings, it has a built-in metric for computing its own
+    accuracy. To compute the accuracy of the system, we simply remove a user's product rating,
+    then recompute the prediction vector. We compare the removed rating to the corresponding
+    prediction. The prediction error is the difference between the actual rating and the
+    predicted rating. </p>
+    <p>Measuring WebSell accuracy involves tradeoffs. You get a better metric by spending more
+    CPU time or using more storage. Rewinding the prediction algorithm farther back expends
+    more resources to create trial predictions, but follows a more representative prediction
+    process. </p>
+    <p>The fastest and worst accuracy metric removes a product rating from a user's rating
+    vector, but leaves the mentor list and strengths alone. The old mentor list and strengths
+    generate a prediction vector that includes the removed product. The difference between the
+    original rating and the predicted rating is the accuracy. This metric takes the same
+    amount of CPU time required to obtain a typical recommendation vector from the mentor
+    list. It can be performed with no additional memory or database storage. </p>
+    <p>The medium speed, moderately good accuracy metric removes a product rating from a
+    user's rating vector and <em>recomputes the mentor strengths</em>. The old mentor list and
+    new strengths generate a prediction vector that includes the removed product. The
+    difference between the original rating and the predicted rating is the accuracy. This
+    metric takes more CPU time, but better reflects the actual algorithm, so it obtains a
+    better accuracy measure. It can be performed with no additional memory or database
+    storage. </p>
+    <p>The slowest and best accuracy metric removes a product rating from a user's rating
+    vector, <em>removes all the old mentors</em>, <em>finds new mentors</em> and <em>computes
+    their weights</em>. The new mentor list and new strengths generate a recommendation vector
+    that includes the removed product. The difference between the original rating and the
+    predicted rating is the accuracy. This metric consumes a substantial amount of CPU time
+    and storage, but produces an exact measure of the accuracy. </p>
+    <p>The fast metrics are valuable for quickly comparing the outcomes of different parameter
+    values. However, the fast metrics suffer from 'self-fulfilling prophecy' -- mentors were
+    selected using the rating that was removed, so they are bound to better predict that
+    rating. The slow metric is valuable for comparing mentor selection algorithms and
+    parameters. <br clear="all">
+    </p>
+    <p align="center"><img src="figure4_sm.gif" hspace="10" vspace="10" border="0" alt="Figure 4: Click for a larger view" WIDTH="500" HEIGHT="376"> </p>
+    <p>Figure 4 shows how these metrics work. In Figure 4a, we temporarily delete a users'
+    rating of <em>Caddyshack</em>, then recompute. In Figure 4b, we temporarily delete and
+    recompute the mentor weights. In Figure 4c, we take the expensive step of finding
+    replacement mentors. In each case, we compare the original rating with the predicted
+    rating to find the error. </p>
+  </blockquote>
+  <h3 class="colored">WebSell is Broadly Applicable</h3>
+  <blockquote>
+    <h4 class="colored">Cold Start</h4>
+    <p>'Cold start' refers to a situation where no preference information is available and
+    there are no mentors to compare with new users. Until WebSell is seeded with preference
+    information it cannot make recommendations. </p>
+    <p>In most cases, the absence of seed data is only a temporary problem. Consumers are
+    often eager to give their opinion, even if there is no immediate reward. WebSell promises
+    deferred gratification -- in a day or two consumers will receive highly accurate
+    recommendations. </p>
+    <p>A WebSell site can improve the database seeding process by leveraging information about
+    the customer. For example, if a site records prior purchases of every user, it can suggest
+    that the user rate products she has purchased in the past. If demographic information is
+    available, the user's demographic can suggest products a user can rate. </p>
+    <p>However, certain product categories have on-going cold start problems. Some product
+    inventories are so large that it may take a long time to obtain consumer preference
+    information for some products. For example, large bookstore inventories may exceed 1
+    million books. Only a couple of ratings are required to start recommending an item, so
+    WebSell will start recommending popular books quickly after start-up. However, obscure
+    books may take months to receive two ratings. </p>
+    <p>Some types of products are transient. For example, articles published weekly or daily
+    are items people want to read, however, the first few people to read an article cannot
+    rely on explicit preference information to recommend articles. Because they are the first
+    to read the article, there are no mentors who can recommend it. </p>
+    <p>However, WebSell provides a solution. </p>
+    <p>Marketers typically have access to large databases of information available on their
+    products and their customers. Any characterization that segments the product space can act
+    as seed data for the WebSell. Here are three examples: <ul>
+      <li>Product-specific information relies on consumer preferences for particular brands,
+        authors, directors, actors, musicians, etc. Consumers who like Madonna's first album have
+        a higher-than-average probability of liking Madonna's last album. Other brands -- such as
+        manufacturer, publisher, director, actor, and musician -- help roughly segment products by
+        consumer preference. Even attributes we don't call 'brands,' such as production year, help
+        segment products. For example, some of us like '60s' music. </li>
+      <li>Preference surrogate information relies on traditional consumer analysis to help segment
+        products. For example, demographic and psychographic segmentation can identify people who
+        have a greater probability of liking a product. </li>
+      <li>Consumer-specific information relies on consumer behavior to help segment products. Many
+        businesses consider it an important brand strategy to track this information to drive
+        inventory decisions, so the information is already there. For example, a merchant may
+        track the books purchased by each consumer. The consumer probably liked the books she
+        purchased, though this is not guaranteed because the book may be a gift, or she may decide
+        it's a dud after reading it. Nevertheless, purchase behavior provides a good means to
+        segment products by preference when no other consumer-specific information is available. </li>
+    </ul>
+    <p>It turns out that the regular WebSell algorithm can be used directly to incorporate
+    this information. </p>
+    <p>Pick any attribute which drives consumption behavior, such as &quot;author=Oliver
+    Sacks&quot;. Construct a 'virtual user' who loves all products satisfying the attribute,
+    but expresses no opinion about others, and put it in the database. This virtual user then
+    acts like a simple salesperson -- if a consumer says she like an Oliver Sacks book, the
+    salesperson would likely recommend another Oliver Sacks book. </p>
+    <p align="center"><img src="figure5_sm.gif" hspace="10" vspace="10" border="0" alt="Figure 5: Click for a larger view" WIDTH="500" HEIGHT="309"> </p>
+    <p>Figure 5 shows tables from a book recommendation system. Virtual users have been
+    entered for the author Oliver Sacks, publisher Harpers, publication date 1992, and
+    subjects neurology and biography. Real users Smith and Jones have both sampled the book <em>Awakenings</em>.
+    </p>
+    <p>The mentors list indicates our confidence in a recommending user. Wesson's strongest
+    mentor is Smith. Books recommended to Wesson by Smith will have the strongest confidence.
+    Wesson's most confident predicted rating is 10 for <em>Migraine</em>. </p>
+    <p>The strongest mentors for Smith are virtual users <em>author=Oliver Sacks</em> and <em>subject=neurology</em>.
+    Smith has more in common with a hypothetical person who loves all Oliver Sacks books and
+    with another hypothetical person who loves all neurology books, than with any real person
+    in the database. WebSell will recommend other Oliver Sacks books and other neurology books
+    to Smith. </p>
+    <p>WebSell provides additional features to help tune 'cold start' ratings. For example, an
+    installation can assign a factor to each virtual user. Suppose publication <em>year</em>=1992
+    had <em>n</em>=100 books in the inventory. To avoid assigning a high-confidence to
+    publication year, a reasonable factor might be 1/<em>n</em>. Then if someone loved exactly
+    one book published in 1992, recommendations deriving just from this publication date would
+    have confidence 10/100 = 1/10, very low confidence. </p>
+    <p>An installation can skew recommendations toward stronger confidence or higher ratings.
+    Movie Critic, for example, uses a combination: it will not recommend movies with low
+    confidence or low predicted ratings. </p>
+  </blockquote>
+  <h1>WebSell is Efficient</h1>
+  <blockquote>
+    <p>WebSell is designed to perform well in applications with millions of items and millions
+    of users, with thousands of simultaneous logins. </p>
+    <p>WebSell includes a cache of recently used mentors. Since most configurations prefer
+    mentors that rate large numbers of items, and those representing popular opinion, those
+    users are more likely to be in the cache. Because of normal statistical distributions,
+    'average people' get recommendations fast from WebSell's cache. </p>
+    <p>The WebSell design allows for efficient parallel processing. The most important factor
+    in creating efficient parallel processing algorithms is limiting inter-processor
+    communication. Inter-processor communication appears explicitly through message-passing
+    functions, or implicitly through shared data structures and synchronization functions. </p>
+    <p>The inter-processor communication required to identify and weight mentors (in
+    background processes) is limited to the synchronization necessary to prevent two
+    background processes from simultaneously updating the same user's mentor list. This is
+    handled by simply assigning disjoint lists of users to different processes. </p>
+    <p>The inter-processor communication required to compute predicted ratings for a user who
+    has logged in is limited to that required to keep the user from logging in again to a
+    different processor. Mentor ratings used in predicting ratings can be <em>stale</em>
+    without damaging the accuracy of the algorithm. Therefore, the algorithm requires no
+    synchronization to keep mentor ratings up to date. To improve the efficiency of the
+    algorithm, cached mentors have a time-stamp, and the cache purges them after an expiration
+    time. </p>
+    <p align="center"><img src="figure6_sm.gif" hspace="15" vspace="15" alt="Figure 6: Parallelism in Preference Server 2.1" WIDTH="500" HEIGHT="220"> </p>
+    <p>Figure 6 shows how a site can distribute WebSell tasks over multiple processors. Figure
+    6b shows that as the simultaneous users increase, the site can add new web servers with
+    associated web processing. Efficiency requires that once a user logs into WebSell,
+    foreground processing for him or her must remain on the same processor. This is handled by
+    naming a specific web server following login. For example, the login process might begin
+    using a web request distributor, say www.bigcorp.com, but following successful login would
+    refer to the web server holding the user's data, say www7.bigcorp.com. </p>
+    <p>Figure 6b shows that using WebSell's ODBC or Oracle interface, the WebSell can exploit
+    a distributed database. A site should use a distributed database when the number of
+    simultaneous users increases. </p>
+    <p>Figure 6c shows that increasing the number of background processes increases the rate
+    at which mentors are identified and introduced into the database. A site should add
+    background processes when the number of registered users increases, or if the site needs
+    more accurate predictions to be established faster. </p>
+    <h4 class="colored">Resource Requirements</h4>
+    <p>Several factors affect resource requirements of WebSell:</p>
+      <table border="0" cellspacing="5">
+        <tr>
+          <td><i>u</i> </td>
+          <td>= total number of users, </td>
+        </tr>
+        <tr>
+          <td><i>p</i> </td>
+          <td>= total number of products, </td>
+        </tr>
+        <tr>
+          <td><i>r</i> </td>
+          <td>= average number of rated products per user, </td>
+        </tr>
+        <tr>
+          <td><i>m</i> </td>
+          <td>= maximum number of mentors per user, </td>
+        </tr>
+        <tr>
+          <td><i>s</i> </td>
+          <td>= maximum simultaneous users. </td>
+        </tr>
+      </table>
+    <p>As <i>u</i> increases, disk storage increases by the size of the user database record. </p>
+    <p>The background processing time follows the relation <i>O</i>(<i>t</i>)&nbsp;=&nbsp;<i>u</i>.
+    This processing time can be split among several processors as described previously. If the
+    algorithm required comparing each user to every other user, the background processing time
+    would increase by <i>u</i><sup><small>2</small></sup>, a large number for many
+    installations. Fortunately, WebSell need only compare a fixed number of old users to each
+    new user. </p>
+    <p>Performance improvements can be obtained by directing the algorithm to spend more
+    background processing time on recently changed users. However, note that some background
+    processing must be devoted to improving the mentor lists for older users records,
+    otherwise these users will not gain the benefits of new user ratings. </p>
+    <p>Database storage required follows this relation: <i>O</i>(<i>d</i>)&nbsp;=&nbsp;<i>u</i>&nbsp;+&nbsp;<i>p</i>&nbsp;+&nbsp;<i>ur&nbsp;</i>+&nbsp;<i>um</i>.
+    </p>
+    <p>Cache memory storage required follows this relation: <i>O</i>(<i>c</i>)&nbsp;=&nbsp;<i>rm</i>.
+    This storage is required in each processor. </p>
+    <p>Predicted rating computation time, follows this relation: <i>O</i>(<i>t</i>)&nbsp;=&nbsp;<i>rms</i>.
+    This processing time can be split among up to <i>s</i> processors. </p>
+  </blockquote>
+  <h3 class="colored">WebSell Integrates with Existing Systems</h3>
+  <blockquote>
+    <p>LikeMinds products are designed to interface with a broad range of web servers,
+    database servers, operating systems, and programming languages. At the same time, we focus
+    on efficiency -- we provide fast proprietary interfaces, as well as generic interfaces. </p>
+    <h4 class="colored">Web Server Interface</h4>
+    <p>The WebSell runs on any web server that supports CGI (Common Gateway Interface). Due to
+    process and socket overhead, CGI can be slow. To eliminate these bottlenecks, the WebSell
+    comes with a &quot;Proxy ODBC Daemon&quot; which holds database connections and processes
+    open as transient CGI programs start and stop. </p>
+    <p>The WebSell also supports a non-proprietary interface called 'FastCGI,' which is often
+    faster than proprietary web server interfaces. Apache, OpenMarket, and other servers
+    provide support for FastCGI. Source code is freely available from LikeMinds or the FastCGI
+    Consortium. </p>
+    <p>WebSell also supports several proprietary interfaces to popular web servers, such as
+    Netscape Enterprise Server and Microsoft Site Server. </p>
+    <p>Finally, programmers can access the Preference Server C++ API directly for highly
+    customized applications. The C++ interface rests on top of the Preference Server Library,
+    which contains the Preference Server correlation engine. Using this interface, customers
+    can create a variety of applications, including non-web based applications (such as
+    consumer kiosks), or applications that interact with proprietary networking protocols. </p>
+    <h4 class="colored">Web Page Interface</h4>
+    <p>The web interface consists of HTML templates that organize a user's online interactions
+    with the Preference Server. These templates can be customized to create a distinctive look
+    and feel for the web site. Server-side Java and JavaScript APIs can also be used to create
+    a custom look-and-feel. </p>
+    <h4 class="colored">Database Interface</h4>
+    <p>Many sites already have extensive databases with information on customers and products.
+    They don't want to change database servers or data formats. LikeMinds WebSell interacts
+    with existing database servers and schemas, making it easy to add to an existing site. </p>
+    <p>LikeMinds WebSell can be configured to work with any existing database format through
+    ODBC, the Open Database Connectivity standard. ODBC lets programs access an SQL relational
+    database regardless of the database vendor's API. LikeMinds WebSell supports all popular
+    database systems, including Informix, Oracle, Sybase, Microsoft, etc. For operating
+    systems where no ODBC client-side API is available or the ODBC driver is inadequate,
+    WebSell can directly call the database API. A direct interface currently exists for Oracle
+    databases, as well as others. </p>
+  </blockquote>
+  <h3 class="colored">Conclusion</h3>
+  <blockquote>
+    <p>WebSell converts web surfers into loyal customers because it delivers trustworthy
+    recommendations for products. Consumers are frequently surprised by product
+    recommendations they might not have expected, but after a successful product experience,
+    their trust in a web site increases. </p>
+    <p>LikeMinds has surveyed the Movie Critic population to determine the utility and
+    desirability of WebSell-based applications. Respondents identified several reasons for
+    using Movie Critic. The Movie Critic saved them time and money in choosing movies to see.
+    Movie Critic helped them see more movies they were confident they would like. Movie Critic
+    helped them see fewer 'duds.' A large majority said it was 'just plain fun' to interact
+    with Movie Critic. </p>
+    <p>When asked to rate their overall satisfaction with Movie Critic, almost all responded
+    with 'love it' or 'really good'. This overwhelming user satisfaction with a WebSell-based
+    application is a testament to the accuracy of the LikeMinds Preference Server technology. </p>
+    <p>WebSell allows for mixing subjective impressions -- such as user ratings,
+    click-throughs, and usage time -- with objective attributes, such as author, subject,
+    keywords, and demographic appeal. By making recommendations based on both subjective and
+    objective criteria, merchants can ensure trustworthy recommendations even in 'cold start'
+    situations. </p>
+    <p>The Preference Server module upon which WebSell is based is an inherently scaleable
+    algorithm. It can handle large databases of users and products with linear resource
+    increases. It is designed for multiprocessing, and can exploit data reference locality
+    through a specialized mentor cache. </p>
+    <p>Administrators can customize WebSell to create a brand-consistent look-and-feel through
+    HTML, CGI, Java, or JavaScript APIs. They can connect existing product and user databases
+    with WebSell to add value to an existing customer base. </p>
+    <p>WebSell has been designed and built as a marketing and sales tool for commercial web
+    sites. Our attention to trustworthiness, broad applicability, performance, and
+    customization reflects our focus on commercial web site needs. </p>
+  </blockquote>
+</blockquote>
+
+<hr>
+
+<p align="right" class="footer1">© Copyright  1997, LikeMinds, Inc. All rights reserved.<br>
+</p>
+</body>
+</html>

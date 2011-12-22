@@ -1,27 +1,15 @@
 BEGIN:VCARD
 VERSION:3.0
-N:Greening;Dan;R.;;
-FN:Dan R. Greening
+N:Greening;Daniel;R.;;PhD
+FN:Daniel R. Greening PhD
 NICKNAME:Dan
-ORG:Citrix Online;
-TITLE:Enterprise ScrumMaster
-item1.EMAIL;type=INTERNET;type=pref:dan.greening@citrix.com
-item1.X-ABLabel:_$!<Other>!$_
+TITLE:Software Engineering Management
 EMAIL;type=INTERNET;type=HOME:dan@greening.org
-TEL;type=WORK:+1 (415) 331-3687
-TEL;type=WORK:+1 (415) 489-4212
-TEL;type=CELL:+1 (415) 810-3693
-TEL;type=HOME;type=pref:+1 (415) 331-3687
+TEL;type=CELL:+1 (415) 754-8311
 TEL;type=HOME;type=FAX:+1 (415) 480-2014
-TEL;type=WORK;type=FAX:+1 (415) 489-4205
-TEL;type=MAIN:(805) 690-6400
-item4.ADR;type=WORK:;;650 Townsend St Ste 275;San Francisco;CA;94103-6228;US
-item4.X-ABADR:us
 item5.ADR;type=HOME;type=pref:;;89 Crescent Ave;Sausalito;CA;94965-2315;US
 item5.X-ABADR:us
 URL;type=HOME;type=pref:http\://dan.greening.org/
-URL;type=WORK:http\://www.citrixonline.com/
-BDAY;value=date:2003-01-08
 X-AIM;type=HOME;type=pref:danrgreening@aol.com
 item6.X-ABRELATEDNAMES;type=pref:Ron Lussier
 item6.X-ABLabel:_$!<Spouse>!$_

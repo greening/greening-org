@@ -7,7 +7,7 @@
 	<artifactId>greening-org</artifactId>
 	<packaging>war</packaging>
 	<name>Dan Greening Personal Site</name>
-	<version>17</version> <!-- Version passed to Google Appengine -->
+	<version>21</version> <!-- Version passed to Google Appengine -->
 	<url>http://dan.greening.org</url>
 	<properties>
 		<scala.version>2.7.4</scala.version>

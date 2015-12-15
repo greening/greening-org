@@ -7,7 +7,7 @@
 	<artifactId>greening-org</artifactId>
 	<packaging>war</packaging>
 	<name>Dan Greening Personal Site</name>
-	<version>23</version> <!-- Version passed to Google Appengine -->
+	<version>24</version> <!-- Version passed to Google Appengine -->
 	<url>http://dan.greening.org</url>
 	<properties>
 		<scala.version>2.7.4</scala.version>
@@ -117,6 +117,18 @@
 		<resources>
 		</resources>
 		<plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+        <configuration>
+
+	  <!-- THE CURRRENT VERSION OF APP ENGINE DOES NOT SUPPORT JAVA 1.8 -->
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>tomcat-maven-plugin</artifactId>
@@ -129,6 +141,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>9.3.6.v20151106</version>
 				<configuration>
 					<downloadSources>true</downloadSources>
 					<classpathContainers>
@@ -141,8 +154,9 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.mortbay.jetty</groupId>
-				<artifactId>maven-jetty-plugin</artifactId>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-maven-plugin</artifactId>
+				<version>9.3.6.v20151106</version>
 				<configuration>
 					<contextPath>/</contextPath>
 					<scanIntervalSeconds>5</scanIntervalSeconds>

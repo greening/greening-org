@@ -4,7 +4,11 @@
 	text-align: center;
 	margin-bottom: 2ex;
 }
-
+.body > img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
 .contact {
 	font-family: Georgia, Century, "Times New Roman", Times, serif;
 	font-size: 10pt;

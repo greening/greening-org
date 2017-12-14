@@ -3,6 +3,7 @@
 	<application>greening-org-hr</application>
 	<version>${pom.version}</version>
 	<threadsafe>true</threadsafe>
+	<runtime>java8</runtime>
 	<env-variables>
 		<env-var name="DEFAULT_ENCODING" value="UTF-8" />
 	</env-variables>

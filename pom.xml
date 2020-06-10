@@ -7,11 +7,12 @@
 	<artifactId>greening-org</artifactId>
 	<packaging>war</packaging>
 	<name>Dan Greening Personal Site</name>
-	<version>26</version> <!-- Version passed to Google Appengine -->
+	<version>30</version> <!-- Version passed to Google Appengine -->
 	<url>http://dan.greening.org</url>
 	<properties>
 		<scala.version>2.7.4</scala.version>
 		<project_charset>UTF-8</project_charset>
+		<google-app-engine-version>1.9.80</google-app-engine-version>
 	</properties>
 
 	<scm>
@@ -48,9 +49,10 @@
 		<!--  bundle with app -->
 		<dependency>
 			<groupId>com.google.appengine</groupId>
-			<artifactId>appengine-api</artifactId>
-			<version>1.0-sdk-1.2.0</version>
+			<artifactId>appengine-api-1.0-sdk</artifactId>
+			<version>${google-app-engine-version}</version>
 		</dependency>
+
 		<!-- For Google App Engine -->
 		<!--unit test related dependencies-->
 		<dependency>
@@ -64,51 +66,21 @@
 		<dependency>
 			<groupId>com.google.appengine</groupId>
 			<artifactId>appengine-api-stubs</artifactId>
-			<version>1.0</version>
+			<version>${google-app-engine-version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.google.appengine</groupId>
 			<artifactId>appengine-local-runtime</artifactId>
-			<version>1.0</version>
+			<version>${google-app-engine-version}</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.appengine/appengine-tools-sdk -->
 		<dependency>
 			<groupId>com.google.appengine</groupId>
-			<artifactId>appengine-tools-api</artifactId>
-			<version>1.0</version>
+			<artifactId>appengine-tools-sdk</artifactId>
+			<version>1.9.80</version>
 			<scope>test</scope>
-		</dependency>
-		<!--app engine related dependencies-->
-		<dependency>
-			<groupId>com.google.appengine</groupId>
-			<artifactId>geronimo-jta</artifactId>
-			<version>1.1_spec-1.1.1</version>
-		</dependency>
-		<dependency>
-			<groupId>javax.jdo</groupId>
-			<artifactId>jdo2-api</artifactId>
-			<version>2.3-20090302111651</version>
-		</dependency>
-		<dependency>
-			<groupId>com.google.appengine</groupId>
-			<artifactId>geronimo-jpa</artifactId>
-			<version>3.0_spec-1.1.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.google.appengine</groupId>
-			<artifactId>datanucleus-appengine</artifactId>
-			<version>1.0.0.final</version>
-		</dependency>
-		<dependency>
-			<groupId>com.google.appengine</groupId>
-			<artifactId>datanucleus-core</artifactId>
-			<version>1.1.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.google.appengine</groupId>
-			<artifactId>datanucleus-jpa</artifactId>
-			<version>1.1.0</version>
 		</dependency>
 	</dependencies>
 	<build>
@@ -118,6 +90,11 @@
 		</resources>
 		<plugins>
 
+			<plugin>
+				<groupId>com.google.appengine</groupId>
+				<artifactId>appengine-maven-plugin</artifactId>
+				<version>1.9.80</version>
+			</plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -130,9 +107,9 @@
         </configuration>
       </plugin>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>tomcat-maven-plugin</artifactId>
-				<version>1.0-beta-1</version>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
 				<configuration>
 					<url>http://localhost:8081/manager</url>
 					<server>manager</server>
@@ -156,7 +133,7 @@
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-maven-plugin</artifactId>
-				<version>9.3.6.v20151106</version>
+				<version>9.4.8.v20171121</version>
 				<configuration>
 					<contextPath>/</contextPath>
 					<scanIntervalSeconds>5</scanIntervalSeconds>
@@ -171,7 +148,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
-				<version>2.0.2</version>
+				<version>3.2.0</version>
 				<configuration>
 					<filteringDeploymentDescriptors>true</filteringDeploymentDescriptors>
 					<webResources>

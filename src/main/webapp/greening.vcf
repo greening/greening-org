@@ -3,16 +3,12 @@ VERSION:3.0
 N:Greening;Daniel;R.;;PhD
 FN:Daniel R. Greening PhD
 NICKNAME:Dan
-TITLE:Software Engineering Management
+TITLE:Chief Product Officer
 EMAIL;type=INTERNET;type=HOME:dan@greening.org
-TEL;type=CELL:+1 (415) 754-8311
-TEL;type=HOME;type=FAX:+1 (415) 480-2014
-item5.ADR;type=HOME;type=pref:;;89 Crescent Ave;Sausalito;CA;94965-2315;US
+TEL;type=MOBILE:+1 (415) 810-3693
+item5.ADR;type=HOME;type=pref:;;1037 NE 65th St # 80358;Seattle;WA;98115-6655;US
 item5.X-ABADR:us
 URL;type=HOME;type=pref:http\://dan.greening.org/
 X-AIM;type=HOME;type=pref:danrgreening@aol.com
-item6.X-ABRELATEDNAMES;type=pref:Ron Lussier
-item6.X-ABLabel:_$!<Spouse>!$_
 CATEGORIES:Group Name,phone
-X-ABUID:222173F7-39F3-4414-93B4-5EBA06113FF6\:ABPerson
 END:VCARD
